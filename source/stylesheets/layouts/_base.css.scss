@@ -1,0 +1,67 @@
+body {
+  font-size: 18px;
+  font-family: "PT Sans", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 30px;
+  p {
+    margin: 0 0 20px;
+  }
+}
+
+header.navbar {
+  border-top: 3px solid hsla(0, 0%, 47%, 1);
+}
+
+article {
+  h1 {
+    margin: 0 0 20px;
+  }
+}
+
+kbd {
+  padding: 0.1em 0.6em;
+  border: 1px solid hsl(0, 0%, 80%);
+  font-size: 11px;
+  font-family: Arial,Helvetica,sans-serif;
+  background-color: hsl(0, 0%, 97%);
+  color: hsl(0, 0%, 20%);
+  @include box-shadow(hsla(0, 0%, 0%, 0.2) 0 1px 0, hsla(360, 100%, 100%, 1) 0 0 0 2px inset);
+  @include border-radius(3px);
+  @include text-shadow(hsl(0, 100%, 100%) 0 1px 0);
+  display: inline-block;
+  margin: 0 0.1em;
+  line-height: 1.4;
+}
+
+blockquote {
+  padding: 15px;
+  border-left: 0px;
+  background-color: hsl(0, 0%, 95%);
+  @include box-shadow(hsl(0, 0%, 76%) 0 1px 5px inset);
+  @include border-radius(3px);
+  p {
+    @extend body;
+    color: hsl(0, 0%, 40%);
+    background-color: hsl(0, 0%, 95%);
+  }
+  p:last-child {
+    margin: 0;
+  }
+}
+
+li {
+  @extend body;
+}
+
+#main {
+  margin-top: 30px;
+}
+
+#footer {
+  @include box-shadow(0 -1px 1px 0 hsla(0, 0%, 92%, 1));
+  margin-top: 60px;
+  height: 70px;
+  background-color: hsl(0, 0%, 96%);
+  p {
+    margin: 20px 0;
+  }
+}
