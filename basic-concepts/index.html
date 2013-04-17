@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>基本概觀</title>
+
+    <!-- Combine multiple fonts into one request -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic|Patua+One|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+
+  <body class="basic-concepts basic-concepts_index">
+    <header class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <hgroup>
+            <a href="/" class="brand"><h1>Sublime Text 手冊</h1></a>
+          </hgroup>
+          <!-- end hgroup -->
+        </div><!-- end .container -->
+      </div><!-- end .navbar-innder -->
+    </header>
+    <!-- end header -->
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="span4"><nav><ul>
+<li><a href="/preface">前言</a>
+
+<ul>
+<li><a href="/preface#about-guides">關於這本手冊</a>
+
+<ul>
+<li><a href="/preface#what-is-sublime-text">什麼是 Sublime Text？</a></li>
+<li><a href="/preface#conventions-in-this-guide">這本手冊的慣例</a></li>
+</ul></li>
+<li><a href="/preface#what-this-guides-teach">這本手冊會教你什麼</a></li>
+</ul></li>
+<li><a href="/installation">安裝</a>
+
+<ul>
+<li><a href="/installation#bits-or-64-bits">32 位元或 64 位元？</a>
+
+<ul>
+<li><a href="/installation#windows">Windows</a></li>
+<li><a href="/installation#osx">OS X</a></li>
+<li><a href="/installation#linux">Linux</a></li>
+</ul></li>
+<li><a href="/installation#for-developers">開發者版本</a></li>
+</ul></li>
+<li><a href="/basic-concepts">基本概觀</a>
+
+<ul>
+<li><a href="/basic-concepts#directories">目錄結構</a>
+
+<ul>
+<li><a href="/basic-concepts#data-directory">Data 目錄</a></li>
+<li><a href="/basic-concepts#package-directory">Packages 目錄</a>
+
+<ul>
+<li><a href="/basic-concepts#user-package">User package</a></li>
+<li><a href="/basic-concepts#default-package">Default package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="/basic-concepts#python-console-and-python-api">Python 控制台與 Python API</a></li>
+<li><a href="/basic-concepts#textmate-compatibility">TextMate 相容</a></li>
+<li><a href="/basic-concepts#vi-emulation">Vi 模擬模式</a></li>
+</ul></li>
+<li><a href="/file-management-and-command-palette">檔案導覽與指令面板</a>
+
+<ul>
+<li><a href="/file-management-and-command-palette#goto-anything">傳送門？（Goto Anthing）</a></li>
+<li><a href="/file-management-and-command-palette#sidebar">側邊欄</a></li>
+<li><a href="/file-management-and-command-palette#command-palette">指令面板（Command Palette）</a></li>
+<li><a href="/file-management-and-command-palette#projects">專案（Project）</a></li>
+</ul></li>
+<li><a href="/edit">編輯</a>
+
+<ul>
+<li><a href="/edit#multiple-selections">多重選取</a></li>
+<li><a href="/edit#join-lines">合併多行</a></li>
+<li>轉換大小寫</li>
+<li>尺規</li>
+<li>註解</li>
+<li>摺疊</li>
+<li>標記</li>
+<li>更多用法</li>
+</ul></li>
+<li><a href="/find">搜尋</a>
+
+<ul>
+<li>全域搜尋</li>
+<li>局部搜尋</li>
+</ul></li>
+<li><a href="/customization">客製化</a>
+
+<ul>
+<li><a href="/customization#snippets">程式碼片段（Snippets）</a></li>
+<li><a href="/customization#macros">巨集（Macros）</a></li>
+<li><a href="/customization#commands">指令（Commands）</a></li>
+<li><a href="/customization#completions">自動補全</a></li>
+<li><a href="/customization#settings">偏好設定（Settings）</a>
+
+<ul>
+<li><a href="/customization#how-to-change-settings">如何修改偏好設定</a></li>
+<li><a href="/customization#settings-type">設定檔的區別</a></li>
+<li><a href="/customization#order-of-precedence-of-sublime-settings-files">合併設定檔的優先排序</a></li>
+<li><a href="/customization#filetype-settings">檔案類型的設定</a></li>
+</ul></li>
+<li><a href="/customization#key-bindings">快捷鍵組合設定（Key Bindings）</a>
+
+<ul>
+<li><a href="/customization#file-format">設定快捷鍵的語法格式</a></li>
+</ul></li>
+<li><a href="/customization#plugin-settings-and-key-bindings">補丁的偏好設定與快捷鍵</a></li>
+</ul></li>
+<li><a href="/package-and-plugin">Package 和 Plugin</a>
+
+<ul>
+<li><a href="/package-and-plugin#package-control">Package Control</a></li>
+<li><a href="/package-and-plugin#install-package-control">安裝 Package Control</a>
+
+<ul>
+<li><a href="/package-and-plugin#install-package">安裝 Package</a></li>
+<li><a href="/package-and-plugin#remove-package">移除 Package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="/others">其他</a>
+
+<ul>
+<li><a href="/others#build-system">Build System</a></li>
+<li><a href="/others#command-line">命令列工具（Command Line）</a></li>
+</ul></li>
+</ul>
+</nav></div>
+        <div class="span8">
+          <article>
+            <header>
+              <h1>基本概觀</h1>
+            </header>
+            <div class="entry">
+              <h2 id="toc_0"><span id="directories">目錄結構</span></h2>
+
+<h3 id="toc_1"><span id="data-directory">Data 目錄</span></h3>
+
+<p>可攜式版本（portable）的 Sublime Text 2 所有跟使用者有關的資料，都放在 <em>Data</em> 目錄下（<em>Sublime Text 2/Data</em>）；安裝版本則因為系統平台的不同，預設路徑是放在以下這些地方：</p>
+
+<ul>
+<li>Windows：<em>%APPDATA%\Sublime Text 2</em></li>
+<li>OS X：<em>~/Library/Application Support/Sublime Text 2</em></li>
+<li>Linux：<em>~/.config/sublime-text-2</em></li>
+</ul>
+
+<p>所有 Sublime Text 2 相關配置的檔案，都放在這些目錄下。<i class="icon-folder-open"></i></p>
+
+<h3 id="toc_2"><span id="package-directory">Packages 目錄</span></h3>
+
+<p><em>Packages</em> 目錄就放在 <em>Data</em> 目錄下。</p>
+
+<p><em>Packages</em> 目錄非常重要，所有程式語言、標記語言的語法高亮檔案，以及各種客製化的補丁資源，全部都是放在這個目錄底下。Sublime Text 2 的 package 意義上就像 Firefox 的 add-on、Google Chrome 的 extension，加強原本沒有的功能，可由開發者透過 Sublime Text 2 的 API 用 Python 自行開發，請見 <a href="#python-console-and-python-api">Python 控制台與 Python API</a>。</p>
+
+<p>你可以直接從 Sublime Text 2 的選單：<em>Preferences</em> &gt;&gt; <em>Browse Packages</em> 開啟系統中 <em>Packages</em> 這個目錄的位置，也可以用<a href="/file-management-and-command-palette#command-palette">指令面板（Command Palette）</a>呼叫，雖然你目前可能還不知道這是什麼，不過很快就會介紹到。</p>
+
+<p>當你瀏覽這個目錄的時候會看到很多程式語言的名字，裡面通常放的都是支援這些語言程式碼高亮的檔案，或是巨集、自動完成的語法等等，可是其中有兩個看起來很不一樣，那就是 <em>Default</em>、<em>User</em> 這兩個目錄。</p>
+
+<h4 id="toc_3"><span id="default-package">Default package</span></h4>
+
+<p><em>Packages/Default</em> 是存放所有 Sublime Text 2 預設的程式、巨集、偏好設定的檔案等等，這裡的檔案理論上都不應該去動它。</p>
+
+<!-- TODO: 加上中文化的連結。 -->
+
+<h4 id="toc_4"><span id="user-package">User package</span></h4>
+
+<p>通常有些未封裝的 package，或是自製的語法、巨集或補丁，那麼 <em>Packages/User</em> 是放置這些檔案的最佳地點。</p>
+
+<p>當 Sublime Text 2 進行軟體更新時，不會去更改 <em>User</em> 這個資料夾的檔案，因此你的偏好設定、快捷鍵設定等等，都應該要放在這個地方，而不是去修改 Default 目錄下的檔案，這個部分會在<a href="/customization">客製化</a>進一步說明。</p>
+
+<h2 id="toc_5"><span id="python-console-and-python-api">Python 控制台與 Python API</span></h2>
+
+<p>這章節的資訊對有興趣開發 Sublime Text 2 補丁的開發者比較有用，對於一般的編輯器使用者只需要知道，Sublime Text 能夠讓人用 Python 自行開發想要的功能。</p>
+
+<p>在 Windows 和 Linux 上，Sublime Text 2 有自帶的 Python 編譯器，讓開發者撰寫補丁時，能夠快速地檢視設定，以及測試 API calls。這個自帶的 Python 編譯器只用來與補丁 API 互動，而不是用來做一般的程式開發；而在 OS X 上 Sublime Text 2 則是用系統自帶的 Python，這意思就是說如果你更改了系統上的 Python 版本，很有可能會造成 Sublime Text 2 出現問題。</p>
+
+<p>Python 控制台是內嵌在 Sublime Text 2 的一個小視窗，能夠輸入 Python 程式碼然後執行它，而 Sublime Text 或是它的補丁也會從這裡輸出訊息，如果發現某個功能或是某個補丁沒作用了，可以打開這個控制台找到錯誤訊息。</p>
+
+<p>要打開 Sublime Text 2 的 Python 控制台可以用快捷鍵按下 <kbd>Ctrl</kbd> + <kbd>`</kbd>，或是從選單中選擇 <em>View</em> &gt;&gt; <em>Show Console</em>。</p>
+
+<h2 id="toc_6"><span id="textmate-compatibility">TextMate 相容</span></h2>
+
+<p>Sublime Text 2 幾乎能夠完整地相容 Textmate 的 bundles 和配色主題，這個資訊對想從 TextMate 轉用 Sublime Text 的使用者非常有用。</p>
+
+<p>TextMate 是 OS X 上非常知名的編輯器，想當初曾有很多人為了它而買了 Mac，可見這魅力有多大！可是 TextMate 自己不爭氣，讓許多曾經愛過它的人失望（那不包括我！XD）。<i class="icon-hand-up"></i></p>
+
+<p>TextMate 已經有發展相當成熟的社群替它撰寫不少好用的 bundles（bundles 意義上等同於 Sublime Text 2 的 packages），只要把 TextMate bundle 放在 <em>Packages</em> 目錄下就可以用，但是 Sublime Text 2 對 bundle 的 command 並不支援。</p>
+
+<h2 id="toc_7"><span id="vi-emulation">Vi 模擬模式</span></h2>
+
+<p>Vi 是「古時候」相當經典的編輯器，他讓開發者能夠只用鍵盤便完成所有的操作；而 Vim 是改良後的版本，目前仍然被廣泛地使用。<i class="icon-pencil"></i></p>
+
+<p>Sublime Text 透過 Vintage 這個內建的 package，提供了 vi 模擬模式，讓你可以使用 vi 的指令模式來操作 Sublime Text。</p>
+
+<p>這個 Vintage package 預設是被忽略的，要啟用這個模式，選擇 <em>Preferences</em> &gt;&gt; <em>Settings - User</em> 或是用快捷鍵 <kbd>Command</kbd> + <kbd>,</kbd> 偏好設定的檔案，將原本的內容：</p>
+<div class="highlight"><pre><span class="s2">&quot;ignored_packages&quot;</span><span class="err">:</span> <span class="p">[</span><span class="s2">&quot;Vintage&quot;</span><span class="p">]</span>
+</pre></div>
+<p>改成：</p>
+<div class="highlight"><pre><span class="s2">&quot;ignored_packages&quot;</span><span class="err">:</span> <span class="p">[]</span>
+</pre></div>
+<p>一旦這個模式被啟用，你應該可以看到「INSERT MODE」文字出現在左下角的狀態欄裡。</p>
+
+<p>Vintage 一開始預設是 insert mode，這樣的好處是讓不熟悉模式概念的初學者，一開始不會因為敲不出字來而感到太大的挫折。可以在<a href="/customization#how-to-change-settings">偏好設定</a>裡加上這行，取消這個預設值：</p>
+<div class="highlight"><pre><span class="s2">&quot;vintage_start_in_command_mode&quot;</span><span class="err">:</span> <span class="kc">true</span>
+</pre></div>
+<p>Vintage 這個 package 包含常用的 Vi 指令，例如：<kbd>d</kbd>（刪除）、<kbd>y</kbd>（複製）、<kbd>c</kbd>（修改）、<kbd>g</kbd><kbd>u</kbd>（小寫）、<kbd>g</kbd><kbd>U</kbd>（大寫）、<kbd>g</kbd><kbd>~</kbd>（交換大小寫）、<kbd>g</kbd><kbd>?</kbd>（rot13）等等，也包括許多移動插字符號的方式，例如：<kbd>h</kbd>、<kbd>j</kbd>、<kbd>k</kbd>、<kbd>l</kbd> 和 <kbd>W</kbd>、<kbd>w</kbd>、<kbd>e</kbd>、<kbd>E</kbd>、<kbd>G</kbd>、<kbd>gg</kbd>等等，幾乎該有的都有了。</p>
+
+<p>不一樣的是，當切換到 insert mode 時，就是一般的 Sublime Text 2 的編輯型態，這時的快捷鍵就如同平時的 Sublime Text 2 一樣，Vi insert mode 的快捷鍵在這裡並不適用。</p>
+
+<p>此外，如果要用 Ex mode 需要另外安裝 <a href="https://github.com/SublimeText/VintageEx">VintageEx</a> 這個 package。</p>
+
+<p>如果你在 OS X Lion 平台上使用 Sublime Text 2 的 Vintage，會發現長壓按鍵不會重複動作，而是跳出一個氣泡框提示你選擇各種變異字。這在 command mode 非常不方便，這是因為系統設定的緣故，如果想要修正這個問題，可以在終端機裡輸入這行指令：</p>
+<div class="highlight"><pre><span class="err">defaults</span> <span class="err">write</span> <span class="err">com.sublimetext.</span><span class="mi">2</span> <span class="err">ApplePressAndHoldEnabled</span> <span class="err">-bool</span> <span class="kc">false</span>
+</pre></div>
+<p>最後，Vintage 提供以下這些 <kbd>ctrl</kbd> 按鍵的快捷鍵：</p>
+
+<ul>
+<li><kbd>ctrl</kbd> + <kbd>[</kbd>：Escape</li>
+<li><kbd>ctrl</kbd> + <kbd>R</kbd>：復原上一步</li>
+<li><kbd>ctrl</kbd> + <kbd>Y</kbd>：往下捲動一行</li>
+<li><kbd>ctrl</kbd> + <kbd>E</kbd>：往上捲動一行</li>
+<li><kbd>ctrl</kbd> + <kbd>F</kbd>：往下捲動一個頁面</li>
+<li><kbd>ctrl</kbd> + <kbd>B</kbd>：往上捲動一個頁面</li>
+</ul>
+
+<p>然而在 Windows 和 Linux 上，這些按鍵會與 Sublime Text 2 原本的一些快捷鍵衝突到，所以這些快捷鍵預設是關閉的，你可以在<a href="/customization#how-to-change-settings">偏好設定</a>裡加上以下這行來啟用：</p>
+<div class="highlight"><pre><span class="s2">&quot;vintage_ctrl_keys&quot;</span><span class="err">:</span> <span class="kc">true</span>
+</pre></div>
+            </div>
+          </article>
+        </div>
+      </div><!-- end .row -->
+    </div><!-- end .container -->
+    <!-- end container -->
+
+    <footer id="footer">
+      <div class="container">
+        <p class="pull-left">
+          &copy; 2013 <a href="http://blog.chh.tw/about" target="_blank">CHH</a>.
+        </p>
+        <p class="pull-right">
+          <a href="#">幫忙編輯此手冊</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

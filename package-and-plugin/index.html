@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Package 和 Plugin</title>
+
+    <!-- Combine multiple fonts into one request -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic|Patua+One|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+
+  <body class="package-and-plugin package-and-plugin_index">
+    <header class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <hgroup>
+            <a href="/" class="brand"><h1>Sublime Text 手冊</h1></a>
+          </hgroup>
+          <!-- end hgroup -->
+        </div><!-- end .container -->
+      </div><!-- end .navbar-innder -->
+    </header>
+    <!-- end header -->
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="span4"><nav><ul>
+<li><a href="/preface">前言</a>
+
+<ul>
+<li><a href="/preface#about-guides">關於這本手冊</a>
+
+<ul>
+<li><a href="/preface#what-is-sublime-text">什麼是 Sublime Text？</a></li>
+<li><a href="/preface#conventions-in-this-guide">這本手冊的慣例</a></li>
+</ul></li>
+<li><a href="/preface#what-this-guides-teach">這本手冊會教你什麼</a></li>
+</ul></li>
+<li><a href="/installation">安裝</a>
+
+<ul>
+<li><a href="/installation#bits-or-64-bits">32 位元或 64 位元？</a>
+
+<ul>
+<li><a href="/installation#windows">Windows</a></li>
+<li><a href="/installation#osx">OS X</a></li>
+<li><a href="/installation#linux">Linux</a></li>
+</ul></li>
+<li><a href="/installation#for-developers">開發者版本</a></li>
+</ul></li>
+<li><a href="/basic-concepts">基本概觀</a>
+
+<ul>
+<li><a href="/basic-concepts#directories">目錄結構</a>
+
+<ul>
+<li><a href="/basic-concepts#data-directory">Data 目錄</a></li>
+<li><a href="/basic-concepts#package-directory">Packages 目錄</a>
+
+<ul>
+<li><a href="/basic-concepts#user-package">User package</a></li>
+<li><a href="/basic-concepts#default-package">Default package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="/basic-concepts#python-console-and-python-api">Python 控制台與 Python API</a></li>
+<li><a href="/basic-concepts#textmate-compatibility">TextMate 相容</a></li>
+<li><a href="/basic-concepts#vi-emulation">Vi 模擬模式</a></li>
+</ul></li>
+<li><a href="/file-management-and-command-palette">檔案導覽與指令面板</a>
+
+<ul>
+<li><a href="/file-management-and-command-palette#goto-anything">傳送門？（Goto Anthing）</a></li>
+<li><a href="/file-management-and-command-palette#sidebar">側邊欄</a></li>
+<li><a href="/file-management-and-command-palette#command-palette">指令面板（Command Palette）</a></li>
+<li><a href="/file-management-and-command-palette#projects">專案（Project）</a></li>
+</ul></li>
+<li><a href="/edit">編輯</a>
+
+<ul>
+<li><a href="/edit#multiple-selections">多重選取</a></li>
+<li><a href="/edit#join-lines">合併多行</a></li>
+<li>轉換大小寫</li>
+<li>尺規</li>
+<li>註解</li>
+<li>摺疊</li>
+<li>標記</li>
+<li>更多用法</li>
+</ul></li>
+<li><a href="/find">搜尋</a>
+
+<ul>
+<li>全域搜尋</li>
+<li>局部搜尋</li>
+</ul></li>
+<li><a href="/customization">客製化</a>
+
+<ul>
+<li><a href="/customization#snippets">程式碼片段（Snippets）</a></li>
+<li><a href="/customization#macros">巨集（Macros）</a></li>
+<li><a href="/customization#commands">指令（Commands）</a></li>
+<li><a href="/customization#completions">自動補全</a></li>
+<li><a href="/customization#settings">偏好設定（Settings）</a>
+
+<ul>
+<li><a href="/customization#how-to-change-settings">如何修改偏好設定</a></li>
+<li><a href="/customization#settings-type">設定檔的區別</a></li>
+<li><a href="/customization#order-of-precedence-of-sublime-settings-files">合併設定檔的優先排序</a></li>
+<li><a href="/customization#filetype-settings">檔案類型的設定</a></li>
+</ul></li>
+<li><a href="/customization#key-bindings">快捷鍵組合設定（Key Bindings）</a>
+
+<ul>
+<li><a href="/customization#file-format">設定快捷鍵的語法格式</a></li>
+</ul></li>
+<li><a href="/customization#plugin-settings-and-key-bindings">補丁的偏好設定與快捷鍵</a></li>
+</ul></li>
+<li><a href="/package-and-plugin">Package 和 Plugin</a>
+
+<ul>
+<li><a href="/package-and-plugin#package-control">Package Control</a></li>
+<li><a href="/package-and-plugin#install-package-control">安裝 Package Control</a>
+
+<ul>
+<li><a href="/package-and-plugin#install-package">安裝 Package</a></li>
+<li><a href="/package-and-plugin#remove-package">移除 Package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="/others">其他</a>
+
+<ul>
+<li><a href="/others#build-system">Build System</a></li>
+<li><a href="/others#command-line">命令列工具（Command Line）</a></li>
+</ul></li>
+</ul>
+</nav></div>
+        <div class="span8">
+          <article>
+            <header>
+              <h1>Package 和 Plugin</h1>
+            </header>
+            <div class="entry">
+              <h2 id="toc_0"><span id="package">Package</span></h2>
+
+<p>Package 放在 <em>Packages/</em> 目錄下，主要用來組織同類型功能的檔案，通常一個典型的 package 裡面會包含以下這些檔案：</p>
+
+<ul>
+<li>建構系統（Build System）：<em>.sublime-build</em></li>
+<li>快捷鍵設定：<em>.sublime-keymap</em></li>
+<li>巨集：<em>.sublime-macro</em></li>
+<li>選單欄：<em>.sublime-menu</em></li>
+<li>補丁程式：<em>.py</em></li>
+<li>preferences：<em>.tmPreferences</em></li>
+<li>選項設定：<em>.sublime-settings</em></li>
+<li>語法定義：<em>.tmLanguage</em></li>
+<li>語法片段：<em>.sublime-snippet</em></li>
+<li>佈景主題：<em>.sublime-theme</em></li>
+</ul>
+
+<!-- TODO: 不知道該怎麼翻 .tmPreferences 這部份…… -->
+
+<p>有些 package 可能只是存放一些檔案，提供資料給其他補丁或 Sublime Text 的核心功能，例如拼音檢查就是使用 <em>PackagesLanguage - English</em> 這個 package 目錄。</p>
+
+<h2 id="toc_1"><span id="plugin">Plugin</span></h2>
+
+<p>Sublime Text 2 的補丁可以用 Python 語言開發，如果你擅長使用 Python 便可以自行開發擴充 Sublime Text 的功能，讓它變得更好用！補丁可以使用已經存在的<a href="/customization#commands">指令</a>，或是建立自己的指令。</p>
+
+<p>你可以將別人寫好的補丁，或是自己寫的補丁腳本，放在以下這幾個位置，都可以被 Sublime Text 讀取到：</p>
+
+<ul>
+<li><em>Packages</em></li>
+<li><em>Packages/&lt;pkg</em>name&gt;/_</li>
+</ul>
+
+<p>因此如果將補丁放在非以上這些目錄，或是更深入的目錄內，就會無法被讀取到，我建議都放在 <em>User/</em> 目錄下比較好備份管理。</p>
+
+<p>更多補丁的參考資料：<a href="http://docs.sublimetext.info/en/latest/extensibility/plugins.html">Plugins</a></p>
+
+<h2 id="toc_2"><span id="package-control">什麼是 Package Control</span></h2>
+
+<p><img alt="sublime-package-control" src="/images/sublime-package-control.png" /></p>
+
+<p><a href="http://wbond.net/sublime_packages/package_control">Package Control</a> 不是內建功能，事實上它只是 Sublime Text 2 的一個 package，由 <a href="http://wbond.net/">Will Bond</a> 所開發。因為實在是太方便了所以幾乎與 Sublime Text 2 緊密結合在一起，成為安裝 Sublime Text 2 時第一個必裝的 package。</p>
+
+<p>Package Control 是功能相當完整的 package manager，讓搜尋、安裝跟移除 Sublime Text  package 變得相當方便，協助自動更新補丁，也因此幾乎所有的補丁開發者，都會將自己的作品提交到 Package Control 上。</p>
+
+<p>這個概念就像是用 Google Chrome 的 Chrome Web Store 安裝擴充套件吧！</p>
+
+<h2 id="toc_3"><span id="install-package-control">安裝 Package Control</span></h2>
+
+<p>還記得先前介紹過的 <a href="/python-console-and-python-api">Python 控制台</a>嗎？快捷鍵 <kbd>Ctrl<kbd> + <kbd>`<kbd>，或是從選單欄選擇 <em>View</em> &gt;&gt; <em>Show Console</em> 打開它，將以下程式碼複製貼上到控制台中，然後按下輸入：</p>
+<div class="highlight"><pre><span class="n">import</span> <span class="n">urllib2</span><span class="p">,</span><span class="n">os</span><span class="p">;</span> <span class="n">pf</span><span class="o">=</span><span class="err">&#39;</span><span class="n">Package</span> <span class="n">Control</span><span class="p">.</span><span class="n">sublime</span><span class="o">-</span><span class="n">package</span><span class="err">&#39;</span><span class="p">;</span> <span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="p">.</span><span class="n">installed_packages_path</span><span class="p">();</span> <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="n">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="n">None</span><span class="p">;</span> <span class="n">urllib2</span><span class="p">.</span><span class="n">install_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">ProxyHandler</span><span class="p">()));</span> <span class="n">open</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="err">&#39;</span><span class="n">wb</span><span class="err">&#39;</span><span class="p">).</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">urlopen</span><span class="p">(</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//sublime.wbond.net/&#39;+pf.replace(&#39; &#39;,&#39;%20&#39;)).read()); print(&#39;Please restart Sublime Text to finish installation&#39;)</span>
+</pre></div>
+<p>Package Control 將會開始安裝，完成時可能需要重新啟動 Sublime Text 2。</p>
+
+<h3 id="toc_4"><span id="install-package">安裝 Package</span></h3>
+
+<p><img alt="install-package" src="/images/sublime-package-control-install.gif" /></p>
+
+<p>用快捷鍵 <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 打開指令面板，輸入「install package」找到正確指令後按下輸入，便會列出 Package Control 上所有可安裝的 packages，搜尋要安裝的 package 按下輸入即開始安裝。</p>
+
+<h3 id="toc_5"><span id="remove-package">移除 Package</span></h3>
+
+<p>與<a href="/package-control#remove-package">安裝 Package</a> 方法相同，打開指令面板後輸入「remove package」，會列出所有已安裝的 packages，從這裡選擇需要刪除的 package。</p>
+
+<p>注意一點，如果有相關的設定檔放在 <em>Package/User/</em> 目錄下，並不會自動被刪除，這部份需要自己手動移除。</p>
+
+            </div>
+          </article>
+        </div>
+      </div><!-- end .row -->
+    </div><!-- end .container -->
+    <!-- end container -->
+
+    <footer id="footer">
+      <div class="container">
+        <p class="pull-left">
+          &copy; 2013 <a href="http://blog.chh.tw/about" target="_blank">CHH</a>.
+        </p>
+        <p class="pull-right">
+          <a href="#">幫忙編輯此手冊</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

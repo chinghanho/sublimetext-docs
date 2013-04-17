@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>檔案導覽與指令面板</title>
+
+    <!-- Combine multiple fonts into one request -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic|Patua+One|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+
+  <body class="file-management-and-command-palette file-management-and-command-palette_index">
+    <header class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <hgroup>
+            <a href="/" class="brand"><h1>Sublime Text 手冊</h1></a>
+          </hgroup>
+          <!-- end hgroup -->
+        </div><!-- end .container -->
+      </div><!-- end .navbar-innder -->
+    </header>
+    <!-- end header -->
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="span4"><nav><ul>
+<li><a href="/preface">前言</a>
+
+<ul>
+<li><a href="/preface#about-guides">關於這本手冊</a>
+
+<ul>
+<li><a href="/preface#what-is-sublime-text">什麼是 Sublime Text？</a></li>
+<li><a href="/preface#conventions-in-this-guide">這本手冊的慣例</a></li>
+</ul></li>
+<li><a href="/preface#what-this-guides-teach">這本手冊會教你什麼</a></li>
+</ul></li>
+<li><a href="/installation">安裝</a>
+
+<ul>
+<li><a href="/installation#bits-or-64-bits">32 位元或 64 位元？</a>
+
+<ul>
+<li><a href="/installation#windows">Windows</a></li>
+<li><a href="/installation#osx">OS X</a></li>
+<li><a href="/installation#linux">Linux</a></li>
+</ul></li>
+<li><a href="/installation#for-developers">開發者版本</a></li>
+</ul></li>
+<li><a href="/basic-concepts">基本概觀</a>
+
+<ul>
+<li><a href="/basic-concepts#directories">目錄結構</a>
+
+<ul>
+<li><a href="/basic-concepts#data-directory">Data 目錄</a></li>
+<li><a href="/basic-concepts#package-directory">Packages 目錄</a>
+
+<ul>
+<li><a href="/basic-concepts#user-package">User package</a></li>
+<li><a href="/basic-concepts#default-package">Default package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="/basic-concepts#python-console-and-python-api">Python 控制台與 Python API</a></li>
+<li><a href="/basic-concepts#textmate-compatibility">TextMate 相容</a></li>
+<li><a href="/basic-concepts#vi-emulation">Vi 模擬模式</a></li>
+</ul></li>
+<li><a href="/file-management-and-command-palette">檔案導覽與指令面板</a>
+
+<ul>
+<li><a href="/file-management-and-command-palette#goto-anything">傳送門？（Goto Anthing）</a></li>
+<li><a href="/file-management-and-command-palette#sidebar">側邊欄</a></li>
+<li><a href="/file-management-and-command-palette#command-palette">指令面板（Command Palette）</a></li>
+<li><a href="/file-management-and-command-palette#projects">專案（Project）</a></li>
+</ul></li>
+<li><a href="/edit">編輯</a>
+
+<ul>
+<li><a href="/edit#multiple-selections">多重選取</a></li>
+<li><a href="/edit#join-lines">合併多行</a></li>
+<li>轉換大小寫</li>
+<li>尺規</li>
+<li>註解</li>
+<li>摺疊</li>
+<li>標記</li>
+<li>更多用法</li>
+</ul></li>
+<li><a href="/find">搜尋</a>
+
+<ul>
+<li>全域搜尋</li>
+<li>局部搜尋</li>
+</ul></li>
+<li><a href="/customization">客製化</a>
+
+<ul>
+<li><a href="/customization#snippets">程式碼片段（Snippets）</a></li>
+<li><a href="/customization#macros">巨集（Macros）</a></li>
+<li><a href="/customization#commands">指令（Commands）</a></li>
+<li><a href="/customization#completions">自動補全</a></li>
+<li><a href="/customization#settings">偏好設定（Settings）</a>
+
+<ul>
+<li><a href="/customization#how-to-change-settings">如何修改偏好設定</a></li>
+<li><a href="/customization#settings-type">設定檔的區別</a></li>
+<li><a href="/customization#order-of-precedence-of-sublime-settings-files">合併設定檔的優先排序</a></li>
+<li><a href="/customization#filetype-settings">檔案類型的設定</a></li>
+</ul></li>
+<li><a href="/customization#key-bindings">快捷鍵組合設定（Key Bindings）</a>
+
+<ul>
+<li><a href="/customization#file-format">設定快捷鍵的語法格式</a></li>
+</ul></li>
+<li><a href="/customization#plugin-settings-and-key-bindings">補丁的偏好設定與快捷鍵</a></li>
+</ul></li>
+<li><a href="/package-and-plugin">Package 和 Plugin</a>
+
+<ul>
+<li><a href="/package-and-plugin#package-control">Package Control</a></li>
+<li><a href="/package-and-plugin#install-package-control">安裝 Package Control</a>
+
+<ul>
+<li><a href="/package-and-plugin#install-package">安裝 Package</a></li>
+<li><a href="/package-and-plugin#remove-package">移除 Package</a></li>
+</ul></li>
+</ul></li>
+<li><a href="/others">其他</a>
+
+<ul>
+<li><a href="/others#build-system">Build System</a></li>
+<li><a href="/others#command-line">命令列工具（Command Line）</a></li>
+</ul></li>
+</ul>
+</nav></div>
+        <div class="span8">
+          <article>
+            <header>
+              <h1>檔案導覽與指令面板</h1>
+            </header>
+            <div class="entry">
+              <h2 id="toc_0"><span id="goto-anything">傳送門？（Goto Anthing）</span></h2>
+
+<p>Goto Anything 就像遊戲<a href="http://www.youtube.com/watch?v=QjF_AAiTPxk">傳送門</a>，讓你快速地開啟任何檔案，使用快捷鍵 <kbd>Command</kbd> + <kbd>P</kbd> 打開它，當輸入文字會立即搜尋、連結到相似檔名的檔案，並且即時預覽。輸入的內容可以是路徑上目錄及檔案的關鍵字，不必輸入很精準、很完整的單字，最後 Sublime Text 會為你選擇一個最佳的結果。</p>
+
+<p>除此之外，Sublime Text 2 的 Goto Anything 還有其他的特異功能，就是可以結合以下各種符號，執行不同的操作：</p>
+
+<ul>
+<li><code>#</code>：在檔案內執行模糊搜尋；</li>
+<li><code>@</code>：搜尋檔案內的 symbols，指的是類別名或者是方法名，快捷鍵是 <kbd>Command</kbd> + <kbd>R</kbd>；</li>
+<li><code>:</code>：插字符號移往該檔案指定的行數，快捷鍵是 <kbd>control</kbd> + <kbd>G</kbd>；</li>
+</ul>
+
+<!-- TODO: 製作一個 GIF 動畫圖 -->
+
+<h2 id="toc_1"><span id="sidebar">側邊欄</span></h2>
+
+<p>側邊欄可以總覽整個專案的所有檔案，就像 Windows 的檔案總管、OS X 的 Finder 那樣。被加進側邊欄的檔案，也就是可以被 <a href="/goto-anything">Goto Anything</a> 搜尋到的檔案。</p>
+
+<p>可以用快捷鍵 <kbd>Command</kbd> + <kbd>K</kbd>、<kbd>Command</kbd> + <kbd>B</kbd> 顯示或隱藏側邊欄。</p>
+
+<p>你也可以用方向鍵來瀏覽側邊欄，但是必須先透過快捷鍵 <kbd>Control</kbd> + <kbd>0</kbd> 將目前游標的焦點移往側邊欄，反之，要移回來按一下 <kbd>Esc</kbd> 即可。當然，你也可以用滑鼠來點，效果都是一樣的，但是既然鍵盤那麼方便為什麼還要用滑鼠呢？:)</p>
+
+<p>在側邊欄裡，敲擊右鍵呼叫功能選單，這裡提供一些常見的基本檔案操作。</p>
+
+<!-- TODO: 加上 sidebar enhacements 補丁 -->
+
+<h2 id="toc_2"><span id="command-palette">指令面板（Command Palette）</span></h2>
+
+<p>指令面板是 Sublime Text 2 中使用內建指令、或是呼叫補丁的功能非常好用的東西，使用快捷鍵 <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 開啟此面板。這個面板指令是讀取自所有的 <code>.sublime-commands</code> 檔案。</p>
+
+<p>以下例子是 <em>Packages/Default/Default.sublime-commands</em> 檔案的一小部分：</p>
+<div class="highlight"><pre><span class="p">[</span>
+  <span class="p">{</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;clear_bookmarks&quot;</span><span class="p">,</span> <span class="nt">&quot;caption&quot;</span><span class="p">:</span> <span class="s2">&quot;Bookmarks: Clear All&quot;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;select_all_bookmarks&quot;</span><span class="p">,</span> <span class="nt">&quot;caption&quot;</span><span class="p">:</span> <span class="s2">&quot;Bookmarks: Select All&quot;</span> <span class="p">},</span>
+
+  <span class="p">{</span> <span class="nt">&quot;caption&quot;</span><span class="p">:</span> <span class="s2">&quot;Indentation: Convert to Tabs&quot;</span><span class="p">,</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;unexpand_tabs&quot;</span><span class="p">,</span> <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;set_translate_tabs&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nt">&quot;caption&quot;</span><span class="p">:</span> <span class="s2">&quot;Indentation: Convert to Spaces&quot;</span><span class="p">,</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;expand_tabs&quot;</span><span class="p">,</span> <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;set_translate_tabs&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nt">&quot;caption&quot;</span><span class="p">:</span> <span class="s2">&quot;Indentation: Reindent Lines&quot;</span><span class="p">,</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;reindent&quot;</span><span class="p">,</span> <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;single_line&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">}</span> <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+<p>稍微解釋一下這裡的意思：</p>
+
+<ul>
+<li><code>caption</code>：顯示在指令面板中的文字；</li>
+<li><code>command</code>：要執行的指令名稱；</li>
+<li><code>args</code>：藉由指令傳入的參數；</li>
+</ul>
+
+<p>因此你可以在指令面板中找到像是「Bookmarks: Clear All」、「Bookmarks: Select All」等這樣的指令，按下輸入時就會觸發執行該命令。</p>
+
+<h2 id="toc_3"><span id="projects">專案（Project）</span></h2>
+
+<p>專案群組是以你的工作需求為單位，將檔案、資料夾加入到一個專案群組中，儲存它然後命名。選擇 <em>Project</em> &gt;&gt; <em>Save Project As...</em>，便可在 Sublime Text 2 建立這樣的專案群組，並且透過快捷鍵 <kbd>Command</kbd> + <kbd>Control</kbd> + <kbd>P</kbd> 在不同專案群組之間快速切換。</p>
+
+<p>建立專案群組時，專案資料會以 JSON 格式儲存在 <em>.sublime-project</em> 檔案裡，同時 Sublime Text 2 也會自動生成一個附檔名為 <em>.sublime-workspace</em> 的檔案，用來儲存當下的使用環境，例如哪些檔案被打開、哪些被修改，甚至連視窗捲動到哪都會被記錄起來。</p>
+
+<p><em>.sublime-project</em> 是可以自己修改的，可支援三個頂層節點，分別是：</p>
+
+<ul>
+<li><code>&quot;folders&quot;</code>：每個資料夾都必須要有路徑（<code>path</code>），選擇性地可以加上 <code>folder_exclude_patterns</code> 或 <code>file_exclude_patterns</code> 設定來排除特定的目錄或檔案。路徑可以是此專案的箱端路徑，也可以是絕對路徑。或許你還會想要替他們取個名字，這將會顯示在側邊欄；</li>
+<li><code>&quot;settings&quot;</code>：用來覆寫個人的<a href="/customization#settings">偏好設定</a>，例如設置縮進的空格數，好讓編輯這個專案的人都可以保持統一的程式碼風格；</li>
+<li><code>&quot;build_systems&quot;</code>：給專案指定的 <a href="/others#build-system">Build System</a> 設定，每一項設定都必須指定名稱（<code>name</code>）；</li>
+</ul>
+
+<p>例子：</p>
+<div class="highlight"><pre><span class="p">{</span>
+  <span class="nt">&quot;folders&quot;</span><span class="p">:</span>
+  <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;src&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;folder_exclude_patterns&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;backup&quot;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Documentation&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;file_exclude_patterns&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;*.css&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;settings&quot;</span><span class="p">:</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;tab_size&quot;</span><span class="p">:</span> <span class="mi">8</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;build_systems&quot;</span><span class="p">:</span>
+  <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;List&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;ls&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+<p>而 <code>.sublime-workspace</code> 是由編輯器自己產生，不應該去動它。</p>
+
+<p>此外，你也可以從終端機用 Sublime Text 2 的<a href="/command-line">命令列工具</a>，以 <code>.sublime-project</code> 檔案作為參數開啟專案，例如 <code>subl --project example.sublime-project</code>。</p>
+
+            </div>
+          </article>
+        </div>
+      </div><!-- end .row -->
+    </div><!-- end .container -->
+    <!-- end container -->
+
+    <footer id="footer">
+      <div class="container">
+        <p class="pull-left">
+          &copy; 2013 <a href="http://blog.chh.tw/about" target="_blank">CHH</a>.
+        </p>
+        <p class="pull-right">
+          <a href="#">幫忙編輯此手冊</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
