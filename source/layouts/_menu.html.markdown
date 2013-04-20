@@ -26,10 +26,10 @@
 * [編輯](/edit)
     * [多重選取](/edit#multiple-selections)
     * [合併多行](/edit#join-lines)
-    * 轉換大小寫
-    * 尺規
-    * 註解
-    * 摺疊
+    * [轉換大小寫](/edit#swap-case)
+    * [尺規](/edit#ruler)
+    * [註解](/edit#comment)
+    * 程式碼摺疊
     * 標記
     * 更多用法
 * [搜尋](/find)

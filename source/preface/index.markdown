@@ -22,7 +22,9 @@ Sublime Text 可以減少撰寫程式碼許多重複性的工作，讓開發者�
 
 ### <span id="conventions-in-this-guide">這本手冊的慣例</span>
 
-由於我慣用的開發平台是 OS X，因此這個 Sublime Text 手冊主要是以 OS X 角度來寫，不過大部分的介紹理論上都可以適用在各個平台上的，即便有差異應該也只需要稍微調整，這部份就請自行嘗試摸索，手冊中在這部份不會著墨太多。<i class="icon-leaf"></i>
+由於我慣用的開發平台是 OS X，因此這個 Sublime Text 手冊主要是以 OS X 角度來寫，不過大部分的介紹理論上都可以適用在各個平台上的，即便有差異應該也只需要稍微調整，這部份就請自行嘗試摸索，手冊中在這部份不會著墨太多（或者，你也可以 fork 這份手冊幫忙補強）。<i class="icon-leaf"></i>
+
+<!-- TODO: 加上 repo 的 URL -->
 
 在開始之前請先參考[本手冊的安裝介紹](/installation)，依照自己平台差異下載安裝 Sublime Text 2。
 

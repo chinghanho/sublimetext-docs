@@ -16,7 +16,7 @@ Goto Anything 就像遊戲[傳送門](http://www.youtube.com/watch?v=QjF_AAiTPxk
 
 ## <span id="sidebar">側邊欄</span>
 
-側邊欄可以總覽整個專案的所有檔案，就像 Windows 的檔案總管、OS X 的 Finder 那樣。被加進側邊欄的檔案，也就是可以被 [Goto Anything](/goto-anything) 搜尋到的檔案。
+側邊欄可以總覽整個專案的所有檔案，就像 Windows 的檔案總管、OS X 的 Finder 那樣。被加進側邊欄的檔案，也就是可以被 [Goto Anything](/file-management-and-command-palette#goto-anything) 搜尋到的檔案。
 
 可以用快捷鍵 <kbd>Command</kbd> + <kbd>K</kbd>、<kbd>Command</kbd> + <kbd>B</kbd> 顯示或隱藏側邊欄。
 
@@ -95,4 +95,4 @@ _.sublime-project_ 是可以自己修改的，可支援三個頂層節點，分�
 
 而 `.sublime-workspace` 是由編輯器自己產生，不應該去動它。
 
-此外，你也可以從終端機用 Sublime Text 2 的[命令列工具](/command-line)，以 `.sublime-project` 檔案作為參數開啟專案，例如 `subl --project example.sublime-project`。
+此外，你也可以從終端機用 Sublime Text 2 的[命令列工具](/others#command-line)，以 `.sublime-project` 檔案作為參數開啟專案，例如 `subl --project example.sublime-project`。

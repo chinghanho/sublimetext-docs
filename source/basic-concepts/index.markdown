@@ -16,6 +16,8 @@ title: "基本概觀"
 
 ### <span id="package-directory">Packages 目錄</span>
 
+![sublime-packages](/images/sublime-packages.png)
+
 _Packages_ 目錄就放在 _Data_ 目錄下。
 
 _Packages_ 目錄非常重要，所有程式語言、標記語言的語法高亮檔案，以及各種客製化的補丁資源，全部都是放在這個目錄底下。Sublime Text 2 的 package 意義上就像 Firefox 的 add-on、Google Chrome 的 extension，加強原本沒有的功能，可由開發者透過 Sublime Text 2 的 API 用 Python 自行開發，請見 [Python 控制台與 Python API](#python-console-and-python-api)。
@@ -58,7 +60,7 @@ TextMate 已經有發展相當成熟的社群替它撰寫不少好用的 bundles
 
 Vi 是「古時候」相當經典的編輯器，他讓開發者能夠只用鍵盤便完成所有的操作；而 Vim 是改良後的版本，目前仍然被廣泛地使用。<i class="icon-pencil"></i>
 
-Sublime Text 透過 Vintage 這個內建的 package，提供了 vi 模擬模式，讓你可以使用 vi 的指令模式來操作 Sublime Text。
+Sublime Text 透過 Vintage 這個內建的 package，提供了 vi 模擬模式，讓你可以使用 vi 的指令模式來操作 Sublime Text。（相容 TextMate 又可以模擬 Vi，Sublime Text 真是強大的太邪惡了！XD）
 
 這個 Vintage package 預設是被忽略的，要啟用這個模式，選擇 _Preferences_ >> _Settings - User_ 或是用快捷鍵 <kbd>Command</kbd> + <kbd>,</kbd> 偏好設定的檔案，將原本的內容：
 
