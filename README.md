@@ -1,5 +1,7 @@
 # 「Sublime Text 手冊」網站的原始碼
 
+Sublime Text 手冊網址：[http://docs.sublimetext.tw/](http://docs.sublimetext.tw/)
+
 ## 本地建置
 
     $ git clone https://github.com/chinghanho/sublimetext-docs.git
@@ -7,7 +9,7 @@
     $ bundle install
     $ middleman server
 
-打開瀏覽器訪問 127.0.0.1:4567，That's all。
+打開瀏覽器訪問 [127.0.0.1:4567](http://127.0.0.1:4567)，That's all。
 
 ## 發現錯誤要怎麼幫忙修改？
 
