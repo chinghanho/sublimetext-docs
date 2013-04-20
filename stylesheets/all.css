@@ -7839,7 +7839,7 @@ body, blockquote p, li {
 
 /* line 10, /Users/whocareu2008/Code/Project/sublimetext-docs/source/stylesheets/layouts/_base.css.scss */
 header.navbar {
-  border-top: 3px solid #787878; }
+  border-top: 3px solid rgba(125, 125, 125, 0.8); }
 
 /* line 15, /Users/whocareu2008/Code/Project/sublimetext-docs/source/stylesheets/layouts/_base.css.scss */
 article h1 {

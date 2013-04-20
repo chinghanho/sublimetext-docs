@@ -1,3 +1,11 @@
+<!--
+   _____       __    ___                   ______          __     ___
+  / ___/__  __/ /_  / (_)___ ___  ___     /_  __/__  _  __/ /_   |__ \
+  \__ \/ / / / __ \/ / / __ `__ \/ _ \     / / / _ \| |/_/ __/   __/ /
+ ___/ / /_/ / /_/ / / / / / / / /  __/    / / /  __/>  </ /_    / __/
+/____/\__,_/_.___/_/_/_/ /_/ /_/\___/    /_/  \___/_/|_|\__/   /____/
+ -->
+
 <!doctype html>
 <html>
   <head>
@@ -86,10 +94,10 @@
 <ul>
 <li><a href="/edit#multiple-selections">多重選取</a></li>
 <li><a href="/edit#join-lines">合併多行</a></li>
-<li>轉換大小寫</li>
-<li>尺規</li>
-<li>註解</li>
-<li>摺疊</li>
+<li><a href="/edit#swap-case">轉換大小寫</a></li>
+<li><a href="/edit#ruler">尺規</a></li>
+<li><a href="/edit#comment">註解</a></li>
+<li>程式碼摺疊</li>
 <li>標記</li>
 <li>更多用法</li>
 </ul></li>
@@ -162,6 +170,8 @@
 
 <h3 id="toc_2"><span id="package-directory">Packages 目錄</span></h3>
 
+<p><img alt="sublime-packages" src="/images/sublime-packages.png" /></p>
+
 <p><em>Packages</em> 目錄就放在 <em>Data</em> 目錄下。</p>
 
 <p><em>Packages</em> 目錄非常重要，所有程式語言、標記語言的語法高亮檔案，以及各種客製化的補丁資源，全部都是放在這個目錄底下。Sublime Text 2 的 package 意義上就像 Firefox 的 add-on、Google Chrome 的 extension，加強原本沒有的功能，可由開發者透過 Sublime Text 2 的 API 用 Python 自行開發，請見 <a href="#python-console-and-python-api">Python 控制台與 Python API</a>。</p>
@@ -204,7 +214,7 @@
 
 <p>Vi 是「古時候」相當經典的編輯器，他讓開發者能夠只用鍵盤便完成所有的操作；而 Vim 是改良後的版本，目前仍然被廣泛地使用。<i class="icon-pencil"></i></p>
 
-<p>Sublime Text 透過 Vintage 這個內建的 package，提供了 vi 模擬模式，讓你可以使用 vi 的指令模式來操作 Sublime Text。</p>
+<p>Sublime Text 透過 Vintage 這個內建的 package，提供了 vi 模擬模式，讓你可以使用 vi 的指令模式來操作 Sublime Text。（相容 TextMate 又可以模擬 Vi，Sublime Text 真是強大的太邪惡了！XD）</p>
 
 <p>這個 Vintage package 預設是被忽略的，要啟用這個模式，選擇 <em>Preferences</em> &gt;&gt; <em>Settings - User</em> 或是用快捷鍵 <kbd>Command</kbd> + <kbd>,</kbd> 偏好設定的檔案，將原本的內容：</p>
 <div class="highlight"><pre><span class="s2">&quot;ignored_packages&quot;</span><span class="err">:</span> <span class="p">[</span><span class="s2">&quot;Vintage&quot;</span><span class="p">]</span>

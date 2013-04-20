@@ -1,3 +1,11 @@
+<!--
+   _____       __    ___                   ______          __     ___
+  / ___/__  __/ /_  / (_)___ ___  ___     /_  __/__  _  __/ /_   |__ \
+  \__ \/ / / / __ \/ / / __ `__ \/ _ \     / / / _ \| |/_/ __/   __/ /
+ ___/ / /_/ / /_/ / / / / / / / /  __/    / / /  __/>  </ /_    / __/
+/____/\__,_/_.___/_/_/_/ /_/ /_/\___/    /_/  \___/_/|_|\__/   /____/
+ -->
+
 <!doctype html>
 <html>
   <head>
@@ -86,10 +94,10 @@
 <ul>
 <li><a href="/edit#multiple-selections">多重選取</a></li>
 <li><a href="/edit#join-lines">合併多行</a></li>
-<li>轉換大小寫</li>
-<li>尺規</li>
-<li>註解</li>
-<li>摺疊</li>
+<li><a href="/edit#swap-case">轉換大小寫</a></li>
+<li><a href="/edit#ruler">尺規</a></li>
+<li><a href="/edit#comment">註解</a></li>
+<li>程式碼摺疊</li>
 <li>標記</li>
 <li>更多用法</li>
 </ul></li>
@@ -156,6 +164,8 @@
 
 <h2 id="toc_1"><span id="join-lines">合併多行</span></h2>
 
+<p><img alt="sublime-join-lines" src="/images/sublime-join-lines.gif" /></p>
+
 <p>假設有一個 array 在檔案裡這樣寫：</p>
 <div class="highlight"><pre><span class="o">[</span>
   <span class="s2">&quot;Facebook&quot;</span><span class="p">,</span>
@@ -163,20 +173,43 @@
   <span class="s2">&quot;Twitter&quot;</span>
 <span class="o">]</span>
 </pre></div>
-<p>想要把它合併到同一行，除了可以透過<a href="/multiple-selections">多重選取</a>功能快速地做到，其實還可以用合併多行（join lines）這個功能，會更方便。先將這個陣列整個選取起來，然後按下快捷鍵 <kbd>Command</kbd> + <kbd>J</kbd>，就會變成：</p>
+<p>想要把它合併到同一行，除了可以透過<a href="/multiple-selections">多重選取</a>功能快速地做到，其實還可以用合併多行（join lines）這個功能，會更方便。先將這個陣列整個選取起來，然後按下快捷鍵 <kbd>Command</kbd> + <kbd>j</kbd>，就會變成：</p>
 <div class="highlight"><pre><span class="o">[</span><span class="s2">&quot;Facebook&quot;</span><span class="p">,</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span> <span class="s2">&quot;Twitter&quot;</span><span class="o">]</span>
 </pre></div>
-<h2 id="toc_2">轉換大小寫</h2>
+<h2 id="toc_2"><span id="swap-case">轉換大小寫</span></h2>
 
-<h2 id="toc_3">尺規</h2>
+<p><img alt="sublime-swap-case" src="/images/sublime-swap-case.gif" /></p>
 
-<h2 id="toc_4">註解</h2>
+<p><kbd>Command</kbd><kbd>k</kbd> + <kbd>Command</kbd><kbd>u</kbd>：轉換文字為大寫；</p>
 
-<h2 id="toc_5">摺疊</h2>
+<p><kbd>Command</kbd><kbd>k</kbd> + <kbd>Command</kbd><kbd>l</kbd>：轉換文字為小寫；</p>
 
-<h2 id="toc_6">標記</h2>
+<p>將單字的字首轉成大寫，預設沒有快捷鍵，你可以從<a href="/file-management-and-command-palette#command-palette">指令面板</a>呼叫它，或是<a href="/customization#key-bindings">自己設定快捷鍵</a>，例如加上這一行，可以用 <kbd>Command</kbd><kbd>k</kbd> + <kbd>Command</kbd><kbd>t</kbd> 呼叫它：</p>
 
-<h2 id="toc_7">更多用法</h2>
+<p><code>json [     { &quot;keys&quot;: [&quot;super+k&quot;, &quot;super+t&quot;], &quot;command&quot;: &quot;title_case&quot; } ]</code></p>
+
+<h2 id="toc_3"><span id="ruler">尺規</span></h2>
+
+<p>尺規會顯示一條參考線，用來限制單行顯示的字元數量，有的人認為這樣有助於程式碼的閱讀。</p>
+
+<p>你可以從選單欄 <em>View</em> &gt;&gt; <em>Ruler</em> 去選擇要斷行的字數，這樣編輯器上就會顯示一條參考線。</p>
+
+<p>也可以從<a href="/customization#settings">偏好設定</a>裡加上自定的數值，或是顯示多條參考線，例如：</p>
+<div class="highlight"><pre><span class="p">[</span>
+    <span class="s2">&quot;rulers&quot;</span><span class="err">:</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">130</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+<h2 id="toc_4"><span id="comment">註解</span></h2>
+
+<p>可以選擇多行，或是插字符號所在位子，然後用快捷鍵 <kbd>Command</kbd> + <kbd>/</kbd> 將選擇的欄位註解起來。</p>
+
+<p>如果你的使用程式語言有所謂的區塊註解（block comment），且語法定義裡也有定義，可以用快捷鍵 <kbd>Command</kbd> + <kbd>alt</kbd> + <kbd>/</kbd> 來使用區塊註解。</p>
+
+<h2 id="toc_5"><span id="code-folding">程式碼摺疊</span></h2>
+
+<h2 id="toc_6"><span id="mark">標記</span></h2>
+
+<h2 id="toc_7"><span id="more">更多用法</span></h2>
 
             </div>
           </article>

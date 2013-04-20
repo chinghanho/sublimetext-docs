@@ -1,3 +1,11 @@
+<!--
+   _____       __    ___                   ______          __     ___
+  / ___/__  __/ /_  / (_)___ ___  ___     /_  __/__  _  __/ /_   |__ \
+  \__ \/ / / / __ \/ / / __ `__ \/ _ \     / / / _ \| |/_/ __/   __/ /
+ ___/ / /_/ / /_/ / / / / / / / /  __/    / / /  __/>  </ /_    / __/
+/____/\__,_/_.___/_/_/_/ /_/ /_/\___/    /_/  \___/_/|_|\__/   /____/
+ -->
+
 <!doctype html>
 <html>
   <head>
@@ -86,10 +94,10 @@
 <ul>
 <li><a href="/edit#multiple-selections">多重選取</a></li>
 <li><a href="/edit#join-lines">合併多行</a></li>
-<li>轉換大小寫</li>
-<li>尺規</li>
-<li>註解</li>
-<li>摺疊</li>
+<li><a href="/edit#swap-case">轉換大小寫</a></li>
+<li><a href="/edit#ruler">尺規</a></li>
+<li><a href="/edit#comment">註解</a></li>
+<li>程式碼摺疊</li>
 <li>標記</li>
 <li>更多用法</li>
 </ul></li>
@@ -155,7 +163,7 @@
 <p>如果你使用的是 64 位元作業系統，請選擇 64 位元的版本，反之則選擇 32 位元版本。</p>
 
 <p>如果是 Windows 用戶，你不確定自己的作業系統是 32 位元還是 64 位元，有個辦法就是選擇 32 位元版本，因為現在的 64 位元系統也可以執行 32 位元的軟體。而 Linux 使用者可以用以下指令來確認自己的作業系統：</p>
-<div class="highlight"><pre><span class="n">uname</span> <span class="o">-</span><span class="n">m</span>
+<div class="highlight"><pre><span class="err">uname</span> <span class="err">-m</span>
 </pre></div>
 <p>對於 OS X 使用者你可以忽略這些，因為 Sublime Text 2 for Mac 只有一種版本，下載就對了！:p</p>
 
@@ -174,12 +182,12 @@
 <h3 id="toc_3"><span id="linux">Linux</span></h3>
 
 <p>你可以手動下載 package 然後解壓縮，或者是使用命令列工具：</p>
-<div class="highlight"><pre><span class="n">cd</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">your</span><span class="o">/</span><span class="n">apps</span>
-<span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//url/to/sublime.tar.bz2</span>
-<span class="n">tar</span> <span class="n">vxjf</span> <span class="n">sublime</span><span class="p">.</span><span class="n">tar</span><span class="p">.</span><span class="n">bz2</span>
+<div class="highlight"><pre><span class="err">cd</span> <span class="err">/path/to/your/apps</span>
+<span class="err">wget</span> <span class="err">http://url/to/sublime.tar.bz</span><span class="mi">2</span>
+<span class="err">tar</span> <span class="err">vxjf</span> <span class="err">sublime.tar.bz</span><span class="mi">2</span>
 </pre></div>
 <p>如果你想要的話，也可以替執行檔建立一個捷徑（symbolic link）：</p>
-<div class="highlight"><pre><span class="n">sudo</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">sublime_text</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">subl</span>
+<div class="highlight"><pre><span class="err">sudo</span> <span class="err">ln</span> <span class="err">-s</span> <span class="err">/path/to/sublime_text</span> <span class="err">/usr/bin/subl</span>
 </pre></div>
 <p>如果你是第一次使用 Sublime Text 2，或是對於這個編輯器還不是很熟悉，建議先瞭解一下<a href="/basic-concepts">基本概觀</a>這個章節的內容。</p>
 
