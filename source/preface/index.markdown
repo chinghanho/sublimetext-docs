@@ -6,8 +6,6 @@ title: "前言"
 
 這個 Sublime Text 手冊主要參考 [docs.sublimetext.info](http://docs.sublimetext.info/) 內容架構，並由 [CHH](http://blog.chh.tw/about/) 維護，如果發現內容有誤，或是有其他建議，請在 Github 上這個 [repo](https://github.com/chinghanho/sublimetext-docs) 開 issue 討論，如果能直接 fork 發個 pull request 幫忙修改就太好了。<i class="icon-thumbs-up"></i>
 
-<!-- TODO: 佈署前先把這裡的 URL 修正 -->
-
 ### <span id="what-is-sublime-text">什麼是 Sublime Text？</span>
 
 Sublime Text 是款強大的跨平台文字編輯器，可支援 Windows、OS X、Linux 多個系統，他的開發者是前 Google 軟體工程師 Jon Skinner，據說[受到 Vim 的種種啟發](http://www.sublimetext.com/blog/articles/anatomy-of-a-next-generation-text-editor)，決定打造一個更好的文字編輯器。他秉持著三項基本原則來開發 Sublime Text：
@@ -22,9 +20,7 @@ Sublime Text 可以減少撰寫程式碼許多重複性的工作，讓開發者�
 
 ### <span id="conventions-in-this-guide">這本手冊的慣例</span>
 
-由於我慣用的開發平台是 OS X，因此這個 Sublime Text 手冊主要是以 OS X 角度來寫，不過大部分的介紹理論上都可以適用在各個平台上的，即便有差異應該也只需要稍微調整，這部份就請自行嘗試摸索，手冊中在這部份不會著墨太多（或者，你也可以 fork 這份手冊幫忙補強）。<i class="icon-leaf"></i>
-
-<!-- TODO: 加上 repo 的 URL -->
+由於我慣用的開發平台是 OS X，因此這個 Sublime Text 手冊主要是以 OS X 角度來寫，不過大部分的介紹理論上都可以適用在各個平台上的，即便有差異應該也只需要稍微調整，這部份就請自行嘗試摸索，手冊中在這部份不會著墨太多（或者，你也可以 [fork 這份手冊](https://github.com/chinghanho/sublimetext-docs)幫忙補強）。<i class="icon-leaf"></i>
 
 在開始之前請先參考[本手冊的安裝介紹](/installation)，依照自己平台差異下載安裝 Sublime Text 2。
 
