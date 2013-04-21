@@ -24,11 +24,11 @@ Goto Anything 就像遊戲[傳送門](http://www.youtube.com/watch?v=QjF_AAiTPxk
 
 在側邊欄裡，敲擊右鍵呼叫功能選單，這裡提供一些常見的基本檔案操作。
 
-<!-- TODO: 加上 sidebar enhacements 補丁 -->
+<!-- TODO: 加上 sidebar enhacements 外掛 -->
 
 ## <span id="command-palette">指令面板（Command Palette）</span>
 
-指令面板是 Sublime Text 2 中使用內建指令、或是呼叫補丁的功能非常好用的東西，使用快捷鍵 <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 開啟此面板。這個面板指令是讀取自所有的 `.sublime-commands` 檔案。
+指令面板是 Sublime Text 2 中使用內建指令、或是呼叫外掛的功能非常好用的東西，使用快捷鍵 <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 開啟此面板。這個面板指令是讀取自所有的 `.sublime-commands` 檔案。
 
 以下例子是 _Packages/Default/Default.sublime-commands_ 檔案的一小部分：
 

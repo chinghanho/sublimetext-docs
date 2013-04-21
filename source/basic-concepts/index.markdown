@@ -20,11 +20,11 @@ title: "基本概觀"
 
 _Packages_ 目錄就放在 _Data_ 目錄下。
 
-_Packages_ 目錄非常重要，所有程式語言、標記語言的語法高亮檔案，以及各種客製化的補丁資源，全部都是放在這個目錄底下。Sublime Text 2 的 package 意義上就像 Firefox 的 add-on、Google Chrome 的 extension，加強原本沒有的功能，可由開發者透過 Sublime Text 2 的 API 用 Python 自行開發，請見 [Python 控制台與 Python API](#python-console-and-python-api)。
+_Packages_ 目錄非常重要，所有程式語言、標記語言的語法上色檔案，以及各種客製化的外掛資源，全部都是放在這個目錄底下。Sublime Text 2 的 package 意義上就像 Firefox 的 add-on、Google Chrome 的 extension，加強原本沒有的功能，可由開發者透過 Sublime Text 2 的 API 用 Python 自行開發，請見 [Python 控制台與 Python API](#python-console-and-python-api)。
 
 你可以直接從 Sublime Text 2 的選單：_Preferences_ >> _Browse Packages_ 開啟系統中 _Packages_ 這個目錄的位置，也可以用[指令面板（Command Palette）](/file-management-and-command-palette#command-palette)呼叫，雖然你目前可能還不知道這是什麼，不過很快就會介紹到。
 
-當你瀏覽這個目錄的時候會看到很多程式語言的名字，裡面通常放的都是支援這些語言程式碼高亮的檔案，或是巨集、自動完成的語法等等，可是其中有兩個看起來很不一樣，那就是 _Default_、_User_ 這兩個目錄。
+當你瀏覽這個目錄的時候會看到很多程式語言的名字，裡面通常放的都是支援這些語言的語法上色規則，或是巨集、自動完成的程式碼片段等等，可是其中有兩個看起來很不一樣，那就是 _Default_、_User_ 這兩個目錄。
 
 #### <span id="default-package">Default package</span>
 
@@ -34,17 +34,17 @@ _Packages/Default_ 是存放所有 Sublime Text 2 預設的程式、巨集、偏
 
 #### <span id="user-package">User package</span>
 
-通常有些未封裝的 package，或是自製的語法、巨集或補丁，那麼 _Packages/User_ 是放置這些檔案的最佳地點。
+通常有些未封裝的 package，或是自製的語法、巨集或外掛，那麼 _Packages/User_ 是放置這些檔案的最佳地點。
 
 當 Sublime Text 2 進行軟體更新時，不會去更改 _User_ 這個資料夾的檔案，因此你的偏好設定、快捷鍵設定等等，都應該要放在這個地方，而不是去修改 Default 目錄下的檔案，這個部分會在[客製化](/customization)進一步說明。
 
 ## <span id="python-console-and-python-api">Python 控制台與 Python API</span>
 
-這章節的資訊對有興趣開發 Sublime Text 2 補丁的開發者比較有用，對於一般的編輯器使用者只需要知道，Sublime Text 能夠讓人用 Python 自行開發想要的功能。
+這章節的資訊對有興趣開發 Sublime Text 2 外掛的開發者比較有用，對於一般的編輯器使用者只需要知道，Sublime Text 能夠讓人用 Python 自行開發想要的功能。
 
-在 Windows 和 Linux 上，Sublime Text 2 有自帶的 Python 編譯器，讓開發者撰寫補丁時，能夠快速地檢視設定，以及測試 API calls。這個自帶的 Python 編譯器只用來與補丁 API 互動，而不是用來做一般的程式開發；而在 OS X 上 Sublime Text 2 則是用系統自帶的 Python，這意思就是說如果你更改了系統上的 Python 版本，很有可能會造成 Sublime Text 2 出現問題。
+在 Windows 和 Linux 上，Sublime Text 2 有內建的 Python 直譯器，讓開發者撰寫外掛時，能夠快速地檢視設定，以及測試 API calls。這個內建的 Python 直譯器只用來與外掛 API 互動，而不是用來做一般的程式開發；而在 OS X 上 Sublime Text 2 則是用系統內建的 Python，這意思就是說如果你更改了系統上的 Python 版本，很有可能會造成 Sublime Text 2 出現問題。
 
-Python 控制台是內嵌在 Sublime Text 2 的一個小視窗，能夠輸入 Python 程式碼然後執行它，而 Sublime Text 或是它的補丁也會從這裡輸出訊息，如果發現某個功能或是某個補丁沒作用了，可以打開這個控制台找到錯誤訊息。
+Python 控制台是內嵌在 Sublime Text 2 的一個小視窗，能夠輸入 Python 程式碼然後執行它，而 Sublime Text 或是它的外掛也會從這裡輸出訊息，如果發現某個功能或是某個外掛沒作用了，可以打開這個控制台找到錯誤訊息。
 
 要打開 Sublime Text 2 的 Python 控制台可以用快捷鍵按下 <kbd>Ctrl</kbd> + <kbd>`</kbd>，或是從選單中選擇 _View_ >> _Show Console_。
 
@@ -95,6 +95,6 @@ Vintage 這個 package 包含常用的 Vi 指令，例如：<kbd>d</kbd>（刪�
 * <kbd>ctrl</kbd> + <kbd>F</kbd>：往下捲動一個頁面
 * <kbd>ctrl</kbd> + <kbd>B</kbd>：往上捲動一個頁面
 
-然而在 Windows 和 Linux 上，這些按鍵會與 Sublime Text 2 原本的一些快捷鍵衝突到，所以這些快捷鍵預設是關閉的，你可以在[偏好設定](/customization#how-to-change-settings)裡加上以下這行來啟用：
+然而在 Windows 和 Linux 上，這些按鍵會與 Sublime Text 2 原本的一些快捷鍵衝突，所以這些快捷鍵預設是關閉的，你可以在[偏好設定](/customization#how-to-change-settings)裡加上以下這行來啟用：
 
     "vintage_ctrl_keys": true

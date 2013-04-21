@@ -4,7 +4,7 @@ title: "前言"
 ---
 ## <span id="about-guides">關於這本手冊</span>
 
-這個 Sublime Text 手冊主要參考 [docs.sublimetext.info](http://docs.sublimetext.info/) 內容架構，並由 [CHH](http://blog.chh.tw/about/) 維護，如果發現內容有誤，或是有其他建議，請在 Github 上這個 [repo](https://github.com/chinghanho/sublimetext-docs) 開 issue 討論，如果能直接 fork 發個 pull request 幫忙修改就太好了。<i class="icon-thumbs-up"></i>
+這個 Sublime Text 手冊主要參考 [docs.sublimetext.info](http://docs.sublimetext.info/) 內容架構，並由 [CHH](http://blog.chh.tw/about/) 維護，如果發現內容有誤，或是有其他建議，請在 GitHub 上這個 [repo](https://github.com/chinghanho/sublimetext-docs) 開 issue 討論，如果能直接 fork 發個 pull request 幫忙修改就太好了。<i class="icon-thumbs-up"></i>
 
 ### <span id="what-is-sublime-text">什麼是 Sublime Text？</span>
 
