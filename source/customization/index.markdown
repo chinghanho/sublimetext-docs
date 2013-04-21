@@ -49,7 +49,7 @@ end]]></content>
 
 ## <span id="commands">指令（Commands）</span>
 
-指令在 Sublime Text 中到處可見，快捷鍵設定、選單項目、巨集等等都會用到。有些指令是 Sublime Text 本身的核心功能，有些則是其他 Python 開發的補丁實作的。順帶一提，所有的指令都可以被 Python 補丁使用。
+指令在 Sublime Text 中到處可見，快捷鍵設定、選單項目、巨集等等都會用到。有些指令是 Sublime Text 本身的核心功能，有些則是其他 Python 開發的外掛實作的。順帶一提，所有的指令都可以被 Python 外掛使用。
 
 指令名稱命名規則是小寫，不同單字以下畫線分離，例如 `hot_exit`；你也可以傳入參數給指令，參數一概是 JSON 類型，以下在 [Python 控制台](/basic-concepts#python-console-and-python-api)執行指令的範例：
 
@@ -201,13 +201,13 @@ Sublime Text 2 預設的快捷鍵設定檔放在 _Packages/Default/Default (OSX)
 
 快捷鍵設定檔的合併方式與偏好設定一樣，合併前的排序方式也幾乎相同，進一步了解請參考[合併設定檔的優先排序](/customization#order-of-precedence-of-sublime-settings-files)。
 
-## <span id="plugin-settings-and-key-bindings">補丁的偏好設定與快捷鍵</span>
+## <span id="plugin-settings-and-key-bindings">外掛的偏好設定與快捷鍵</span>
 
-以 [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements) 這個補丁來舉例，打開這個 package 可以找到以下這幾種檔案類型：_.sublime-commands_、_.sublime-keymap_、_.sublime-settings_，他們分別的作用是：
+以 [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements) 這個外掛來舉例，打開這個 package 可以找到以下這幾種檔案類型：_.sublime-commands_、_.sublime-keymap_、_.sublime-settings_，他們分別的作用是：
 
 * _Commands.sublime-commands_：在[指令面板章節](/file-management-and-command-palette#command-palette)曾經介紹過，Sublime Text 2 會讀取所有 _.sublime-commands_ 檔案，然後列在指令面板中，你可以在這裡找到可以用的指令；
-* _Default.sublime-keymap_：這是補丁預設的快捷鍵配置，很有可能會跟你原本的一些快捷鍵衝突，因此需要自己把衝突的快捷鍵改掉；
-* _Side Bar.sublime-settings_：這是給補丁用的偏好設定，你可以參考這裡的設定，在 _Packages/User/_ 目錄下新建一個 _Side Bar.sublime-settings_ 來覆蓋原本的。
+* _Default.sublime-keymap_：這是外掛預設的快捷鍵配置，很有可能會跟你原本的一些快捷鍵衝突，因此需要自己把衝突的快捷鍵改掉；
+* _Side Bar.sublime-settings_：這是給外掛用的偏好設定，你可以參考這裡的設定，在 _Packages/User/_ 目錄下新建一個 _Side Bar.sublime-settings_ 來覆蓋原本的。
 
 當我們打開 _Commands.sublime-commands_ 可以看到以下的指令：
 
@@ -218,7 +218,7 @@ Sublime Text 2 預設的快捷鍵設定檔放在 _Packages/Default/Default (OSX)
 ]
 ```
 
-現在想替補丁的 `side_bar_rename` 指令加上快捷鍵來使用，所以我們從選單欄點選 _Preferences_ >> _Key Bindings - User_，打開 _Default (OSX).sublime-keymap_（位在 _Packages/User/_ 下）加上：
+現在想替外掛的 `side_bar_rename` 指令加上快捷鍵來使用，所以我們從選單欄點選 _Preferences_ >> _Key Bindings - User_，打開 _Default (OSX).sublime-keymap_（位在 _Packages/User/_ 下）加上：
 
 ``` json
 [
