@@ -58,7 +58,7 @@ title: "編輯"
 
 ## <span id="comment">註解</span>
 
-可以選擇多行，或是插字符號所在位子，然後用快捷鍵 <kbd>Command</kbd> + <kbd>/</kbd> 將選擇的欄位註解起來。
+可以選擇多行，或是插字符號所在位置，然後用快捷鍵 <kbd>Command</kbd> + <kbd>/</kbd> 將選擇的欄位註解起來。
 
 如果你的使用程式語言有所謂的區塊註解（block comment），且語法定義裡也有定義，可以用快捷鍵 <kbd>Command</kbd> + <kbd>alt</kbd> + <kbd>/</kbd> 來使用區塊註解。
 

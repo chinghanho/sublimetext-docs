@@ -6,7 +6,7 @@ title: "客製化"
 
 程式碼片段將經常重複使用的程式碼儲存起來，可以讓你只輸入幾個關鍵字，按下 Tab 自動完成其餘的部份。
 
-Sublime Text 的程式碼片段與 Textmate 完全兼容，檔案以 _.sublime-snippet_（XML 格式）為副檔名，以下這是個範例：
+Sublime Text 的程式碼片段與 Textmate 完全相容，檔案以 _.sublime-snippet_（XML 格式）為副檔名，以下這是個範例：
 
 ``` xml
 <snippet>

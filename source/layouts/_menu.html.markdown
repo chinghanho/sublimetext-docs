@@ -47,7 +47,7 @@
         * [檔案類型的設定](/customization#filetype-settings)
     * [快捷鍵組合設定（Key Bindings）](/customization#key-bindings)
         * [設定快捷鍵的語法格式](/customization#file-format)
-    * [補丁的偏好設定與快捷鍵](/customization#plugin-settings-and-key-bindings)
+    * [外掛的偏好設定與快捷鍵](/customization#plugin-settings-and-key-bindings)
 * [Package 和 Plugin](/package-and-plugin)
     * [Package Control](/package-and-plugin#package-control)
     * [安裝 Package Control](/package-and-plugin#install-package-control)
