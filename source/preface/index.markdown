@@ -6,6 +6,8 @@ title: "前言"
 
 這個 Sublime Text 手冊主要參考 [docs.sublimetext.info](http://docs.sublimetext.info/) 內容架構，並由 [CHH](http://blog.chh.tw/about/) 維護，如果發現內容有誤，或是有其他建議，請在 GitHub 上這個 [repo](https://github.com/chinghanho/sublimetext-docs) 開 issue 討論，如果能直接 fork 發個 pull request 幫忙修改就太好了。<i class="icon-thumbs-up"></i>
 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />本站內容係採用<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.zh_TW">創用 CC 姓名標示-相同方式分享 3.0 Unported 授權條款</a>授權。允許使用者重製、散布、傳輸及修改本著作（包括商業性利用）。使用時應附上本站連結，引用內容之授權請參見引用出處。
+
 ### <span id="what-is-sublime-text">什麼是 Sublime Text？</span>
 
 Sublime Text 是款強大的跨平台文字編輯器，可支援 Windows、OS X、Linux 多個系統，他的開發者是前 Google 軟體工程師 Jon Skinner，據說[受到 Vim 的種種啟發](http://www.sublimetext.com/blog/articles/anatomy-of-a-next-generation-text-editor)，決定打造一個更好的文字編輯器。他秉持著三項基本原則來開發 Sublime Text：
