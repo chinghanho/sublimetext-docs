@@ -144,7 +144,7 @@
 <ul>
 <li><a href="/customization#file-format">設定快捷鍵的語法格式</a></li>
 </ul></li>
-<li><a href="/customization#plugin-settings-and-key-bindings">補丁的偏好設定與快捷鍵</a></li>
+<li><a href="/customization#plugin-settings-and-key-bindings">外掛的偏好設定與快捷鍵</a></li>
 </ul></li>
 <li><a href="/package-and-plugin">Package 和 Plugin</a>
 
@@ -180,7 +180,7 @@
 <li>快捷鍵設定：<em>.sublime-keymap</em></li>
 <li>巨集：<em>.sublime-macro</em></li>
 <li>選單欄：<em>.sublime-menu</em></li>
-<li>補丁程式：<em>.py</em></li>
+<li>外掛程式：<em>.py</em></li>
 <li>preferences：<em>.tmPreferences</em></li>
 <li>選項設定：<em>.sublime-settings</em></li>
 <li>語法定義：<em>.tmLanguage</em></li>
@@ -190,22 +190,22 @@
 
 <!-- TODO: 不知道該怎麼翻 .tmPreferences 這部份…… -->
 
-<p>有些 package 可能只是存放一些檔案，提供資料給其他補丁或 Sublime Text 的核心功能，例如拼音檢查就是使用 <em>PackagesLanguage - English</em> 這個 package 目錄。</p>
+<p>有些 package 可能只是存放一些檔案，提供資料給其他外掛或 Sublime Text 的核心功能，例如拼音檢查就是使用 <em>PackagesLanguage - English</em> 這個 package 目錄。</p>
 
 <h2 id="toc_1"><span id="plugin">Plugin</span></h2>
 
-<p>Sublime Text 2 的補丁可以用 Python 語言開發，如果你擅長使用 Python 便可以自行開發擴充 Sublime Text 的功能，讓它變得更好用！補丁可以使用已經存在的<a href="/customization#commands">指令</a>，或是建立自己的指令。</p>
+<p>Sublime Text 2 的外掛可以用 Python 語言開發，如果你擅長使用 Python 便可以自行開發擴充 Sublime Text 的功能，讓它變得更好用！外掛可以使用已經存在的<a href="/customization#commands">指令</a>，或是建立自己的指令。</p>
 
-<p>你可以將別人寫好的補丁，或是自己寫的補丁腳本，放在以下這幾個位置，都可以被 Sublime Text 讀取到：</p>
+<p>你可以將別人寫好的外掛，或是自己寫的外掛腳本，放在以下這幾個位置，都可以被 Sublime Text 讀取到：</p>
 
 <ul>
 <li><em>Packages</em></li>
 <li><em>Packages/&lt;pkg</em>name&gt;/_</li>
 </ul>
 
-<p>因此如果將補丁放在非以上這些目錄，或是更深入的目錄內，就會無法被讀取到，我建議都放在 <em>User/</em> 目錄下比較好備份管理。</p>
+<p>因此如果將外掛放在非以上這些目錄，或是更深入的目錄內，就會無法被讀取到，我建議都放在 <em>User/</em> 目錄下比較好備份管理。</p>
 
-<p>更多補丁的參考資料：<a href="http://docs.sublimetext.info/en/latest/extensibility/plugins.html">Plugins</a></p>
+<p>更多外掛的參考資料：<a href="http://docs.sublimetext.info/en/latest/extensibility/plugins.html">Plugins</a></p>
 
 <h2 id="toc_2"><span id="package-control">什麼是 Package Control</span></h2>
 
@@ -213,7 +213,7 @@
 
 <p><a href="http://wbond.net/sublime_packages/package_control">Package Control</a> 不是內建功能，事實上它只是 Sublime Text 2 的一個 package，由 <a href="http://wbond.net/">Will Bond</a> 所開發。因為實在是太方便了所以幾乎與 Sublime Text 2 緊密結合在一起，成為安裝 Sublime Text 2 時第一個必裝的 package。</p>
 
-<p>Package Control 是功能相當完整的 package manager，讓搜尋、安裝跟移除 Sublime Text  package 變得相當方便，協助自動更新補丁，也因此幾乎所有的補丁開發者，都會將自己的作品提交到 Package Control 上。</p>
+<p>Package Control 是功能相當完整的 package manager，讓搜尋、安裝跟移除 Sublime Text  package 變得相當方便，協助自動更新外掛，也因此幾乎所有的外掛開發者，都會將自己的作品提交到 Package Control 上。</p>
 
 <p>這個概念就像是用 Google Chrome 的 Chrome Web Store 安裝擴充套件吧！</p>
 

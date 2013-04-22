@@ -144,7 +144,7 @@
 <ul>
 <li><a href="/customization#file-format">設定快捷鍵的語法格式</a></li>
 </ul></li>
-<li><a href="/customization#plugin-settings-and-key-bindings">補丁的偏好設定與快捷鍵</a></li>
+<li><a href="/customization#plugin-settings-and-key-bindings">外掛的偏好設定與快捷鍵</a></li>
 </ul></li>
 <li><a href="/package-and-plugin">Package 和 Plugin</a>
 
@@ -175,7 +175,7 @@
 
 <p>程式碼片段將經常重複使用的程式碼儲存起來，可以讓你只輸入幾個關鍵字，按下 Tab 自動完成其餘的部份。</p>
 
-<p>Sublime Text 的程式碼片段與 Textmate 完全兼容，檔案以 <em>.sublime-snippet</em>（XML 格式）為副檔名，以下這是個範例：</p>
+<p>Sublime Text 的程式碼片段與 Textmate 完全相容，檔案以 <em>.sublime-snippet</em>（XML 格式）為副檔名，以下這是個範例：</p>
 <div class="highlight"><pre><span class="nt">&lt;snippet&gt;</span>
     <span class="nt">&lt;content&gt;</span><span class="cp">&lt;![CDATA[def ${1:method_name}</span>
 <span class="cp">  $0</span>
@@ -214,7 +214,7 @@
 
 <h2 id="toc_2"><span id="commands">指令（Commands）</span></h2>
 
-<p>指令在 Sublime Text 中到處可見，快捷鍵設定、選單項目、巨集等等都會用到。有些指令是 Sublime Text 本身的核心功能，有些則是其他 Python 開發的補丁實作的。順帶一提，所有的指令都可以被 Python 補丁使用。</p>
+<p>指令在 Sublime Text 中到處可見，快捷鍵設定、選單項目、巨集等等都會用到。有些指令是 Sublime Text 本身的核心功能，有些則是其他 Python 開發的外掛實作的。順帶一提，所有的指令都可以被 Python 外掛使用。</p>
 
 <p>指令名稱命名規則是小寫，不同單字以下畫線分離，例如 <code>hot_exit</code>；你也可以傳入參數給指令，參數一概是 JSON 類型，以下在 <a href="/basic-concepts#python-console-and-python-api">Python 控制台</a>執行指令的範例：</p>
 <div class="highlight"><pre><span class="n">view</span><span class="o">.</span><span class="n">run_command</span><span class="p">(</span><span class="s">&quot;goto_line&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s">&quot;line&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">})</span>
@@ -348,14 +348,14 @@
 
 <p>快捷鍵設定檔的合併方式與偏好設定一樣，合併前的排序方式也幾乎相同，進一步了解請參考<a href="/customization#order-of-precedence-of-sublime-settings-files">合併設定檔的優先排序</a>。</p>
 
-<h2 id="toc_12"><span id="plugin-settings-and-key-bindings">補丁的偏好設定與快捷鍵</span></h2>
+<h2 id="toc_12"><span id="plugin-settings-and-key-bindings">外掛的偏好設定與快捷鍵</span></h2>
 
-<p>以 <a href="https://github.com/titoBouzout/SideBarEnhancements">SideBarEnhancements</a> 這個補丁來舉例，打開這個 package 可以找到以下這幾種檔案類型：<em>.sublime-commands</em>、<em>.sublime-keymap</em>、<em>.sublime-settings</em>，他們分別的作用是：</p>
+<p>以 <a href="https://github.com/titoBouzout/SideBarEnhancements">SideBarEnhancements</a> 這個外掛來舉例，打開這個 package 可以找到以下這幾種檔案類型：<em>.sublime-commands</em>、<em>.sublime-keymap</em>、<em>.sublime-settings</em>，他們分別的作用是：</p>
 
 <ul>
 <li><em>Commands.sublime-commands</em>：在<a href="/file-management-and-command-palette#command-palette">指令面板章節</a>曾經介紹過，Sublime Text 2 會讀取所有 <em>.sublime-commands</em> 檔案，然後列在指令面板中，你可以在這裡找到可以用的指令；</li>
-<li><em>Default.sublime-keymap</em>：這是補丁預設的快捷鍵配置，很有可能會跟你原本的一些快捷鍵衝突，因此需要自己把衝突的快捷鍵改掉；</li>
-<li><em>Side Bar.sublime-settings</em>：這是給補丁用的偏好設定，你可以參考這裡的設定，在 <em>Packages/User/</em> 目錄下新建一個 <em>Side Bar.sublime-settings</em> 來覆蓋原本的。</li>
+<li><em>Default.sublime-keymap</em>：這是外掛預設的快捷鍵配置，很有可能會跟你原本的一些快捷鍵衝突，因此需要自己把衝突的快捷鍵改掉；</li>
+<li><em>Side Bar.sublime-settings</em>：這是給外掛用的偏好設定，你可以參考這裡的設定，在 <em>Packages/User/</em> 目錄下新建一個 <em>Side Bar.sublime-settings</em> 來覆蓋原本的。</li>
 </ul>
 
 <p>當我們打開 <em>Commands.sublime-commands</em> 可以看到以下的指令：</p>
@@ -364,7 +364,7 @@
   <span class="p">{</span> <span class="nt">&quot;caption&quot;</span><span class="p">:</span> <span class="s2">&quot;File: Duplicate&quot;</span><span class="p">,</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;side_bar_duplicate&quot;</span> <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
-<p>現在想替補丁的 <code>side_bar_rename</code> 指令加上快捷鍵來使用，所以我們從選單欄點選 <em>Preferences</em> &gt;&gt; <em>Key Bindings - User</em>，打開 <em>Default (OSX).sublime-keymap</em>（位在 <em>Packages/User/</em> 下）加上：</p>
+<p>現在想替外掛的 <code>side_bar_rename</code> 指令加上快捷鍵來使用，所以我們從選單欄點選 <em>Preferences</em> &gt;&gt; <em>Key Bindings - User</em>，打開 <em>Default (OSX).sublime-keymap</em>（位在 <em>Packages/User/</em> 下）加上：</p>
 <div class="highlight"><pre><span class="p">[</span>
   <span class="p">{</span> <span class="nt">&quot;keys&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;f2&quot;</span><span class="p">],</span> <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;side_bar_rename&quot;</span> <span class="p">}</span>
 <span class="p">]</span>
