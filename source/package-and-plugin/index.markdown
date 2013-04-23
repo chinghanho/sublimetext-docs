@@ -46,7 +46,7 @@ Package Control 是功能相當完整的 package manager，讓搜尋、安裝跟
 
 ## <span id="install-package-control">安裝 Package Control</span>
 
-還記得先前介紹過的 [Python 控制台](/python-console-and-python-api)嗎？快捷鍵 <kbd>Ctrl<kbd> + <kbd>`<kbd>，或是從選單欄選擇 _View_ >> _Show Console_ 打開它，將以下程式碼複製貼上到控制台中，然後按下輸入：
+還記得先前介紹過的 [Python 控制台](/basic-concepts/#python-console-and-python-api)嗎？快捷鍵 <kbd>Ctrl</kbd> + <kbd>`</kbd>，或是從選單欄選擇 _View_ >> _Show Console_ 打開它，將以下程式碼複製貼上到控制台中，然後按下輸入：
 
     import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
 
