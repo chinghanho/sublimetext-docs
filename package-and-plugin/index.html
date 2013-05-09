@@ -121,8 +121,18 @@
 <li><a href="/find">搜尋</a>
 
 <ul>
-<li>全域搜尋</li>
-<li>局部搜尋</li>
+<li><a href="/find#search-single-file">搜尋單一檔案的內容</a>
+
+<ul>
+<li><a href="/find#search-and-replace">搜尋替換</a></li>
+<li><a href="/find#incremental-search">累加搜尋（Incremental Search）</a></li>
+</ul></li>
+<li><a href="/find#search-multiple-files">搜尋專案內全部檔案的內容</a>
+
+<ul>
+<li><a href="/find#search-scope">搜尋範圍</a></li>
+</ul></li>
+<li><a href="/find#regex">正規表示式（Regular Expressions）</a></li>
 </ul></li>
 <li><a href="/customization">客製化</a>
 
@@ -219,7 +229,7 @@
 
 <h2 id="toc_3"><span id="install-package-control">安裝 Package Control</span></h2>
 
-<p>還記得先前介紹過的 <a href="/python-console-and-python-api">Python 控制台</a>嗎？快捷鍵 <kbd>Ctrl<kbd> + <kbd>`<kbd>，或是從選單欄選擇 <em>View</em> &gt;&gt; <em>Show Console</em> 打開它，將以下程式碼複製貼上到控制台中，然後按下輸入：</p>
+<p>還記得先前介紹過的 <a href="/basic-concepts/#python-console-and-python-api">Python 控制台</a>嗎？快捷鍵 <kbd>Ctrl</kbd> + <kbd>`</kbd>，或是從選單欄選擇 <em>View</em> &gt;&gt; <em>Show Console</em> 打開它，將以下程式碼複製貼上到控制台中，然後按下輸入：</p>
 <div class="highlight"><pre><span class="n">import</span> <span class="n">urllib2</span><span class="p">,</span><span class="n">os</span><span class="p">;</span> <span class="n">pf</span><span class="o">=</span><span class="err">&#39;</span><span class="n">Package</span> <span class="n">Control</span><span class="p">.</span><span class="n">sublime</span><span class="o">-</span><span class="n">package</span><span class="err">&#39;</span><span class="p">;</span> <span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="p">.</span><span class="n">installed_packages_path</span><span class="p">();</span> <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="n">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="n">None</span><span class="p">;</span> <span class="n">urllib2</span><span class="p">.</span><span class="n">install_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">ProxyHandler</span><span class="p">()));</span> <span class="n">open</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="err">&#39;</span><span class="n">wb</span><span class="err">&#39;</span><span class="p">).</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">urlopen</span><span class="p">(</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//sublime.wbond.net/&#39;+pf.replace(&#39; &#39;,&#39;%20&#39;)).read()); print(&#39;Please restart Sublime Text to finish installation&#39;)</span>
 </pre></div>
 <p>Package Control 將會開始安裝，完成時可能需要重新啟動 Sublime Text 2。</p>
