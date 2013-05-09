@@ -33,8 +33,12 @@
     * 標記
     * 更多用法
 * [搜尋](/find)
-    * 全域搜尋
-    * 局部搜尋
+    * [搜尋單一檔案的內容](/find#search-single-file)
+        * [搜尋替換](/find#search-and-replace)
+        * [累加搜尋（Incremental Search）](/find#incremental-search)
+    * [搜尋專案內全部檔案的內容](/find#search-multiple-files)
+        * [搜尋範圍](/find#search-scope)
+    * [正規表示式（Regular Expressions）](/find#regex)
 * [客製化](/customization)
     * [程式碼片段（Snippets）](/customization#snippets)
     * [巨集（Macros）](/customization#macros)

@@ -12,8 +12,6 @@ Goto Anything 就像遊戲[傳送門](http://www.youtube.com/watch?v=QjF_AAiTPxk
 * `@`：搜尋檔案內的 symbols，指的是類別名或者是方法名，快捷鍵是 <kbd>Command</kbd> + <kbd>R</kbd>；
 * `:`：插字符號移往該檔案指定的行數，快捷鍵是 <kbd>control</kbd> + <kbd>G</kbd>；
 
-<!-- TODO: 製作一個 GIF 動畫圖 -->
-
 ## <span id="sidebar">側邊欄</span>
 
 側邊欄可以總覽整個專案的所有檔案，就像 Windows 的檔案總管、OS X 的 Finder 那樣。被加進側邊欄的檔案，也就是可以被 [Goto Anything](/file-management-and-command-palette#goto-anything) 搜尋到的檔案。
