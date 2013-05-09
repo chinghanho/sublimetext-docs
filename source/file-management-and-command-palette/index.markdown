@@ -2,7 +2,7 @@
 layout: default
 title: "檔案導覽與指令面板"
 ---
-## <span id="goto-anything">傳送門？（Goto Anthing）</span>
+## <span id="goto-anything">傳送門？（Goto Anything）</span>
 
 Goto Anything 就像遊戲[傳送門](http://www.youtube.com/watch?v=QjF_AAiTPxk)，讓你快速地開啟任何檔案，使用快捷鍵 <kbd>Command</kbd> + <kbd>P</kbd> 打開它，當輸入文字會立即搜尋、連結到相似檔名的檔案，並且即時預覽。輸入的內容可以是路徑上目錄及檔案的關鍵字，不必輸入很精準、很完整的單字，最後 Sublime Text 會為你選擇一個最佳的結果。
 
