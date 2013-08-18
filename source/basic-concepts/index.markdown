@@ -36,7 +36,7 @@ _Packages/Default_ 是存放所有 Sublime Text 2 預設的程式、巨集、偏
 
 通常有些未封裝的 package，或是自製的語法、巨集或外掛，那麼 _Packages/User_ 是放置這些檔案的最佳地點。
 
-當 Sublime Text 2 進行軟體更新時，不會去更改 _User_ 這個資料夾的檔案，因此你的偏好設定、快捷鍵設定等等，都應該要放在這個地方，而不是去修改 Default 目錄下的檔案，這個部分會在[客製化](/customization)進一步說明。
+當進行 Sublime Text 程序更新時，不會修改 _User_ 中的內容，因此你的偏好設定、快捷鍵設定等，都應放在這裏，而不是去修改 Default 目錄下的檔案，這部分會在[客製化](/customization)進一步說明。
 
 ## <span id="python-console-and-python-api">Python 控制台與 Python API</span>
 
