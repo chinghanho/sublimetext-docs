@@ -13,7 +13,7 @@ Sublime Text 手冊網址：[http://docs.sublimetext.tw/](http://docs.sublimetex
 
 ## 發現錯誤要怎麼幫忙修改？
 
-1. 點一下又上角的按鈕，Fork it！
+1. 點一下右上角的按鈕，Fork it！
 2. 建立一個你自己的 feature branch，例如：`git checkout -b typo-hotfix`
 3. 提交你所做的變更：`git commit -am "鼎立相助 -> 鼎力相助"`
 4. push 到你 GitHub 上的 repo：`git push origin typo-hotfix`
