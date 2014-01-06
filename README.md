@@ -4,10 +4,12 @@ Sublime Text 手冊網址：[http://docs.sublimetext.tw/](http://docs.sublimetex
 
 ## 本地建置
 
-    $ git clone https://github.com/chinghanho/sublimetext-docs.git
-    $ cd sublimetext-docs
-    $ bundle install
-    $ middleman server
+```bash
+$ git clone https://github.com/chinghanho/sublimetext-docs.git
+$ cd sublimetext-docs
+$ bundle install
+$ middleman server
+```
 
 打開瀏覽器訪問 [127.0.0.1:4567](http://127.0.0.1:4567)，That's all。
 
