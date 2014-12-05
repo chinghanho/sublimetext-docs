@@ -62,6 +62,22 @@ title: "編輯"
 
 如果你的使用程式語言有所謂的區塊註解（block comment），且語法定義裡也有定義，可以用快捷鍵 <kbd>Command</kbd> + <kbd>alt</kbd> + <kbd>/</kbd> 來使用區塊註解。
 
+## <span id="wordwrap">自動換行</span>
+
+Sublime Text 預設並不會開啟換行，但是有時會碰到程式碼太長的情況，這時就可以透過下列步驟將自動換行開啟。
+
+```
+Preference > Settings - User
+```
+
+開啟使用者自訂設定檔之後，將下列代碼依照JSON的正確格式填入。
+
+```
+{"word_wrap": true}
+```
+
+儲存之後就會啟用自動換行功能了。
+
 ## <span id="code-folding">程式碼摺疊</span>
 
 ## <span id="mark">標記</span>
