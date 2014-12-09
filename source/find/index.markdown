@@ -74,3 +74,19 @@ Sublime Text 可以用正規表示式比對複雜的文字，將符合規則的�
     (?:Sw|P)i(?:tch|s{2})\s(?:it\s)?of{2}!
 
 Sublime Text 2 使用的是 [Perl 正規表示式](http://www.boost.org/doc/libs/1_47_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)的語法。
+
+**舉例**
+
+把下列字串取代成abc.1的格式。
+
+    var arr = ["1-abc", "2-cde", "3-fgh", "4-ijk", "5-lmn", "6-opq"];
+
+**搜尋**
+
+    ([0-9]{1})-([a-z]{3})
+
+**取代**
+
+    $2.$1
+
+> 小技巧：被括號所選取的值，可以用$字號加上數字表示。
