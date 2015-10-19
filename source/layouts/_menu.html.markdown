@@ -19,7 +19,7 @@
     * [TextMate 相容](/basic-concepts#textmate-compatibility)
     * [Vi 模擬模式](/basic-concepts#vi-emulation)
 * [檔案導覽與指令面板](/file-management-and-command-palette)
-    * [傳送門？（Goto Anthing）](/file-management-and-command-palette#goto-anything)
+    * [傳送門？（Goto Anything）](/file-management-and-command-palette#goto-anything)
     * [側邊欄](/file-management-and-command-palette#sidebar)
     * [指令面板（Command Palette）](/file-management-and-command-palette#command-palette)
     * [專案（Project）](/file-management-and-command-palette#projects)
