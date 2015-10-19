@@ -22,7 +22,7 @@ _Packages_ 目錄就放在 _Data_ 目錄下。
 
 _Packages_ 目錄非常重要，所有程式語言、標記語言的語法上色檔案，以及各種客製化的外掛資源，全部都是放在這個目錄底下。Sublime Text 2 的 package 意義上就像 Firefox 的 add-on、Google Chrome 的 extension，加強原本沒有的功能，可由開發者透過 Sublime Text 2 的 API 用 Python 自行開發，請見 [Python 控制台與 Python API](#python-console-and-python-api)。
 
-你可以直接從 Sublime Text 2 的選單：_Preferences_ >> _Browse Packages_ 開啟系統中 _Packages_ 這個目錄的位置，也可以用[指令面板（Command Palette）](/file-management-and-command-palette#command-palette)呼叫，雖然你目前可能還不知道這是什麼，不過很快就會介紹到。
+你可以直接從 Sublime Text 2 的選單：_Preferences_ >> _Browse Packages_ 開啟系統中 _Packages_ 這個目錄的位置，也可以用[指令面板（Command Palette）](/file-management-and-command-palette/#command-palette)呼叫，雖然你目前可能還不知道這是什麼，不過很快就會介紹到。
 
 當你瀏覽這個目錄的時候會看到很多程式語言的名字，裡面通常放的都是支援這些語言的語法上色規則，或是巨集、自動完成的程式碼片段等等，可是其中有兩個看起來很不一樣，那就是 _Default_、_User_ 這兩個目錄。
 
@@ -36,7 +36,7 @@ _Packages/Default_ 是存放所有 Sublime Text 2 預設的程式、巨集、偏
 
 通常有些未封裝的 package，或是自製的語法、巨集或外掛，那麼 _Packages/User_ 是放置這些檔案的最佳地點。
 
-當 Sublime Text 2 進行軟體更新時，不會去更改 _User_ 這個資料夾的檔案，因此你的偏好設定、快捷鍵設定等等，都應該要放在這個地方，而不是去修改 Default 目錄下的檔案，這個部分會在[客製化](/customization)進一步說明。
+當進行 Sublime Text 程序更新時，不會修改 _User_ 中的內容，因此你的偏好設定、快捷鍵設定等，都應放在這裏，而不是去修改 Default 目錄下的檔案，這部分會在[客製化](/customization)進一步說明。
 
 ## <span id="python-console-and-python-api">Python 控制台與 Python API</span>
 

@@ -4,16 +4,18 @@ Sublime Text 手冊網址：[http://docs.sublimetext.tw/](http://docs.sublimetex
 
 ## 本地建置
 
-    $ git clone https://github.com/chinghanho/sublimetext-docs.git
-    $ cd sublimetext-docs
-    $ bundle install
-    $ middleman server
+```bash
+$ git clone https://github.com/chinghanho/sublimetext-docs.git
+$ cd sublimetext-docs
+$ bundle install
+$ middleman server
+```
 
 打開瀏覽器訪問 [127.0.0.1:4567](http://127.0.0.1:4567)，That's all。
 
 ## 發現錯誤要怎麼幫忙修改？
 
-1. 點一下又上角的按鈕，Fork it！
+1. 點一下右上角的按鈕，Fork it！
 2. 建立一個你自己的 feature branch，例如：`git checkout -b typo-hotfix`
 3. 提交你所做的變更：`git commit -am "鼎立相助 -> 鼎力相助"`
 4. push 到你 GitHub 上的 repo：`git push origin typo-hotfix`
